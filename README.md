@@ -23,7 +23,8 @@ This repository aims to help Android developers brush up on their Kotlin and And
 ## 📂 Kotlin Questions
 
 This section includes questions ranging from core language features to advanced Kotlin concepts.
-📝 Sample Questions
+
+### 📝 Sample Questions
 
   - What are data classes in Kotlin, and what is their use?
   - Explain the difference between sealed classes and enum classes in Kotlin.
@@ -35,7 +36,7 @@ This section includes questions ranging from core language features to advanced 
 
 This section covers Android-specific topics, including lifecycle management, architecture patterns, Jetpack libraries, and modern Android development practices.
 
-📝 Sample Questions
+### 📝 Sample Questions
 
   - Describe the Fragment lifecycle and how it differs from an Activity’s lifecycle.
   - What are Android Architecture Components, and why are they used?
