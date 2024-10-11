@@ -52,10 +52,11 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 Here are some recommended resources to deepen your understanding and get hands-on experience:
 
-  - Official Kotlin Documentation
-  - Android Developers Guide
-  - Kotlin Coroutines Guide
-  - Jetpack Compose Tutorial
+  - [Official Kotlin Documentation](https://kotlinlang.org/)
+  - [Android Developers Guide](https://developer.android.com/guide)
+  - [Kotlin Coroutines Guide](https://kotlinlang.org/docs/coroutines-guide.html)
+  - [Jetpack Compose Tutorial](https://developer.android.com/compose)
+  - [Android Architecture Components](https://developer.android.com/topic/architecture)
 
 ## 🤝 Contributing
 
