@@ -1,70 +1,35 @@
 # 📘 Android & Kotlin Interview Questions & Answers
 
-A comprehensive collection of frequently asked Android and Kotlin interview questions, with clear explanations and code examples. Ideal for both beginners and seasoned developers preparing for technical interviews. 🚀
+1. What is the difference between var and val in Kotlin?
 
+    Answer:
+        var is used to declare a mutable variable, meaning its value can be changed.
+        val is used to declare an immutable variable, meaning its value cannot be changed after it's assigned.
 
-## 📑 Table of Contents
+2. Explain nullable types in Kotlin. What is the ? operator?
 
-   - 📋 Overview
-   - 📂 Kotlin Questions
-   - 📂 Android Questions
-   - 💡 Useful Resources
-   - 🤝 Contributing
-   - 📜 License
+    Answer:
+        In Kotlin, a type can be nullable by adding ? to its type. For example, String? means the variable can hold either a String value or null.
+        The ? operator is used to make a type nullable, allowing safe handling of null values.
 
-## 📋 Overview
+3. What are Kotlin's primary constructors and secondary constructors?
 
-This repository aims to help Android developers brush up on their Kotlin and Android development skills before interviews. It includes questions that cover a wide range of topics, from basic syntax to advanced concepts, ensuring you’re well-prepared to tackle any technical challenge.
+    Answer:
+        A primary constructor is defined in the class header and is used to initialize class properties.
+        Secondary constructors are defined within the class body using the constructor keyword and are used when more complex initialization is needed.
 
-  - Purpose: Prepare for Android/Kotlin job interviews.
-  - Difficulty Levels: Beginner, Intermediate, Advanced.
-  - Focus Areas: Android Core Concepts, Kotlin Programming, Jetpack Components, Coroutines, and Architecture Patterns.
+4. What are data classes in Kotlin?
 
-## 📂 Kotlin Questions
+    Answer:
+        Data classes are classes that are used to hold data. They automatically provide useful methods like toString(), hashCode(), equals(), and copy() by default. A data class must have at least one primary constructor parameter.
 
-This section includes questions ranging from core language features to advanced Kotlin concepts.
+5. What is a sealed class in Kotlin, and why is it useful?
 
-### 📝 Sample Questions
+    Answer:
+        A sealed class is a class that restricts the inheritance hierarchy. All subclasses of a sealed class must be defined in the same file. This makes it useful when representing restricted or fixed sets of types, such as in state handling or modeling success/failure outcomes.
 
-  - What are data classes in Kotlin, and what is their use?
-  - Explain the difference between sealed classes and enum classes in Kotlin.
-  - What is the purpose of inline functions? When should they be used?
+6. What is the purpose of companion object in Kotlin?
 
-🔗 Full Kotlin Questions List (Coming Soon)
-
-## 📂 Android Questions
-
-This section covers Android-specific topics, including lifecycle management, architecture patterns, Jetpack libraries, and modern Android development practices.
-
-### 📝 Sample Questions
-
-  - Describe the Fragment lifecycle and how it differs from an Activity’s lifecycle.
-  - What are Android Architecture Components, and why are they used?
-  - What is the difference between ViewModel and LiveData?
-
-🔗 Full Android Questions List (Coming Soon)
-
-## 💡 Useful Resources
-
-Here are some recommended resources to deepen your understanding and get hands-on experience:
-
-  - Official Kotlin Documentation
-  - Android Developers Guide
-  - Kotlin Coroutines Guide
-  - Jetpack Compose Tutorial
-
-## 🤝 Contributing
-
-We welcome contributions to expand and refine the list of questions and answers. To contribute:
-
-  1. Fork the repository.
-  2. Create a new branch (feature-xyz).
-  3. Add your content or make improvements.
-  4. Submit a pull request.
-
-Please ensure your submissions are well-formatted, with clear explanations and relevant code snippets where applicable.
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-💻 Happy Coding & Best of Luck in Your Interview! 🎯
+    Answer:
+        companion object is used to define static members or functions in a class, similar to static members in Java. It allows you to create a single object associated with a class, giving access to properties and methods that are common to all instances of the class.
+   

@@ -1,70 +1,34 @@
-# 📘 Android & Kotlin Interview Questions & Answers
+ 
+ 1. What is an Activity in Android, and why is it important?
 
-A comprehensive collection of frequently asked Android and Kotlin interview questions, with clear explanations and code examples. Ideal for both beginners and seasoned developers preparing for technical interviews. 🚀
+    Answer:
+        An Activity represents a single screen with a user interface in Android. It acts as an entry point for interacting with the app's UI. Activities are essential because they manage the lifecycle of the app's UI components and handle user interaction.
 
+2. Explain the Android activity lifecycle.
 
-## 📑 Table of Contents
+    Answer:
+        The Android activity lifecycle defines a series of states an activity goes through, from creation to destruction. Key lifecycle methods include:
+            onCreate(): Called when the activity is first created.
+            onStart(): Called when the activity becomes visible to the user.
+            onResume(): Called when the activity starts interacting with the user.
+            onPause(): Called when the activity is partially visible and interacting with the user is paused.
+            onStop(): Called when the activity is no longer visible to the user.
+            onDestroy(): Called when the activity is being destroyed.
 
-   - 📋 Overview
-   - 📂 Kotlin Questions
-   - 📂 Android Questions
-   - 💡 Useful Resources
-   - 🤝 Contributing
-   - 📜 License
+3. What is a Fragment, and how does it differ from an Activity?
 
-## 📋 Overview
+    Answer:
+        A Fragment is a reusable portion of UI that can be embedded within an Activity. Unlike an Activity, a fragment cannot exist independently; it must be hosted within an activity. Fragments help in building flexible and reusable UIs, especially in larger screens like tablets.
 
-This repository aims to help Android developers brush up on their Kotlin and Android development skills before interviews. It includes questions that cover a wide range of topics, from basic syntax to advanced concepts, ensuring you’re well-prepared to tackle any technical challenge.
+4. What is the difference between onCreate() and onStart() in an Android Activity?
 
-  - Purpose: Prepare for Android/Kotlin job interviews.
-  - Difficulty Levels: Beginner, Intermediate, Advanced.
-  - Focus Areas: Android Core Concepts, Kotlin Programming, Jetpack Components, Coroutines, and Architecture Patterns.
+    Answer:
+        onCreate() is called when the activity is first created, and it is used for initial setup, such as inflating the UI and initializing components.
+        onStart() is called just before the activity becomes visible to the user, typically after onCreate(). It is used to start processes that should be visible to the user but not necessarily interactive yet.
 
-## 📂 Kotlin Questions
+5. What are the types of Intent in Android?
 
-This section includes questions ranging from core language features to advanced Kotlin concepts.
-
-### 📝 Sample Questions
-
-  - What are data classes in Kotlin, and what is their use?
-  - Explain the difference between sealed classes and enum classes in Kotlin.
-  - What is the purpose of inline functions? When should they be used?
-
-🔗 Full Kotlin Questions List (Coming Soon)
-
-## 📂 Android Questions
-
-This section covers Android-specific topics, including lifecycle management, architecture patterns, Jetpack libraries, and modern Android development practices.
-
-### 📝 Sample Questions
-
-  - Describe the Fragment lifecycle and how it differs from an Activity’s lifecycle.
-  - What are Android Architecture Components, and why are they used?
-  - What is the difference between ViewModel and LiveData?
-
-🔗 Full Android Questions List (Coming Soon)
-
-## 💡 Useful Resources
-
-Here are some recommended resources to deepen your understanding and get hands-on experience:
-
-  - Official Kotlin Documentation
-  - Android Developers Guide
-  - Kotlin Coroutines Guide
-  - Jetpack Compose Tutorial
-
-## 🤝 Contributing
-
-We welcome contributions to expand and refine the list of questions and answers. To contribute:
-
-  1. Fork the repository.
-  2. Create a new branch (feature-xyz).
-  3. Add your content or make improvements.
-  4. Submit a pull request.
-
-Please ensure your submissions are well-formatted, with clear explanations and relevant code snippets where applicable.
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-💻 Happy Coding & Best of Luck in Your Interview! 🎯
+    Answer:
+        There are two types of Intent:
+            Explicit Intent: Used to launch a specific activity or service by specifying the exact component name.
+            Implicit Intent: Used when the component is not specified, and Android resolves the intent to an appropriate app or component that can handle the action (e.g., sharing content or opening a web link).
