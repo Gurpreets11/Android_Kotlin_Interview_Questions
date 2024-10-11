@@ -1,4 +1,5 @@
- 
+ ## 📘 Android Interview Questions & Answers
+
  1. What is an Activity in Android, and why is it important?
 
     Answer:

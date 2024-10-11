@@ -1,4 +1,4 @@
-# 📘 Android & Kotlin Interview Questions & Answers
+## 📘 Kotlin Interview Questions & Answers
 
 1. What is the difference between var and val in Kotlin?
 
