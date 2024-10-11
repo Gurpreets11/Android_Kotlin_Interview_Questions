@@ -20,6 +20,7 @@ This repository aims to help Android developers brush up on their Kotlin and And
   - Difficulty Levels: Beginner, Intermediate, Advanced.
   - Focus Areas: Android Core Concepts, Kotlin Programming, Jetpack Components, Coroutines, and Architecture Patterns.
 
+<!--
 ## 📂 Kotlin Questions
 
 This section includes questions ranging from core language features to advanced Kotlin concepts.
@@ -48,6 +49,8 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 [View Android Questions](./android/core_components.md)
 
+-->
+
 ## 💡 Useful Resources
 
 Here are some recommended resources to deepen your understanding and get hands-on experience:
@@ -57,6 +60,8 @@ Here are some recommended resources to deepen your understanding and get hands-o
   - [Kotlin Coroutines Guide](https://kotlinlang.org/docs/coroutines-guide.html)
   - [Jetpack Compose Tutorial](https://developer.android.com/compose)
   - [Android Architecture Components](https://developer.android.com/topic/architecture)
+
+<!-- 
 
 ## 🤝 Contributing
 
@@ -68,6 +73,8 @@ We welcome contributions to expand and refine the list of questions and answers.
   4. Submit a pull request.
 
 Please ensure your submissions are well-formatted, with clear explanations and relevant code snippets where applicable.
+
+-->
 
 ## 📜 License
 
