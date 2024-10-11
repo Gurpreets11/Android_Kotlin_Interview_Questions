@@ -30,7 +30,9 @@ This section includes questions ranging from core language features to advanced 
   - Explain the difference between sealed classes and enum classes in Kotlin.
   - What is the purpose of inline functions? When should they be used?
 
-🔗 Full Kotlin Questions List (Coming Soon)
+🔗 Full Kotlin Questions List 
+
+[View Basic Kotlin Questions](./kotlin/basic_questions.md)
 
 ## 📂 Android Questions
 
@@ -42,7 +44,9 @@ This section covers Android-specific topics, including lifecycle management, arc
   - What are Android Architecture Components, and why are they used?
   - What is the difference between ViewModel and LiveData?
 
-🔗 Full Android Questions List (Coming Soon)
+🔗 Full Android Questions List 
+
+[View Android Questions](./android/core_components.md)
 
 ## 💡 Useful Resources
 
