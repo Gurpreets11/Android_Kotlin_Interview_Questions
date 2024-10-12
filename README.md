@@ -53,11 +53,12 @@ This section covers Android-specific topics, including lifecycle management, arc
 -->
 
 
-## 📝 Content
+## 📝 Contents
 
   - [Android Questions](#android-questions)
   - [Basic Kotlin Questions](#basic-kotlin-questions)
   - [Kotlin Coroutines](#kotlin-coroutines)
+  - [Core Java](#core-java-questions)
 
 
 ## Android Questions
@@ -140,6 +141,11 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 Coming soon..
 
+
+
+## Core Java Questions
+
+Coming soon..
 
 
 ## 💡 Useful Resources
