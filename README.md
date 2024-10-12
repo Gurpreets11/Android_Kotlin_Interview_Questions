@@ -5,12 +5,12 @@ A comprehensive collection of frequently asked Android and Kotlin interview ques
 
 ## 📑 Table of Contents
 
-   - 📋 [Overview](#overview)
+   - 📋 [Overview](#📋-overview)
    - 📂 [Kotlin Questions](#basic-kotlin-questions)
    - 📂 [Android Questions](#android-questions)
-   - 💡 [Useful Resources](#useful-resources)
+   - 💡 [Useful Resources](#💡-useful-resources)
    - 🤝 Contributing
-   - 📜 [License](#license)
+   - 📜 [License](#📜-license)
 
 ## 📋 Overview
 
