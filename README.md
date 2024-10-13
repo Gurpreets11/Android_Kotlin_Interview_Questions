@@ -106,6 +106,17 @@ This section covers Android-specific topics, including lifecycle management, arc
 	- In the third and final step, the Android apkbuilder is required to take all the inputs and build the Android Packaging Key (APK) file.
 
 
+* **What are the different tools available in Android development? Explain their functions.**
+	
+	Answer:
+	There are a variety of tools available to help Android developers:
+	- Android Software Development Kit (SDK) and Virtual Device Manager: This tool is used to generate and handle Android Virtual Devices (AVD) and SDKs. Through the emulator in the AVD, you can specify the supported SDK version, storage in the SD card, screen resolution, and other abilities such as GPS and touch screen.
+	- The Android Emulator: The AE is the implementation of the Android Virtual Machine, designed to run processes within a virtual device itself, which can be used on a development computer. The main use of this tool is in testing and debugging of Android applications. 
+	- Android Debug Bridge (ADB): The ADB is a command line debugging application doled out with the SDK. It enables developers to communicate with the device, and facilitates actions such as the installation and debugging of an application.
+	- Android Asset Packaging Tool (AAPT): The AAPT builds the ‘.apk’ distributable Android package file.
+
+
+
 
 * **What is an Activity in Android, and why is it important?**
 
