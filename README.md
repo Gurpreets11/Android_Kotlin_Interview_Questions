@@ -63,6 +63,21 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 ## Android Questions
 
+* **What is Android?**
+	Answer:
+	Android is an open source operating system and is mainly popular for Smartphones and Tablets. This operating system is Linux Kernel based. Using Android operating system, the developer develops the functions or programs which can perform basic as well as the advanced type of operations on the Smartphone.
+
+* **What is Android SDK?**
+
+	Answer:
+	To develop a mobile application, Android developers require some tools and this requirement is satisfied by “Android SDK” which is a set of tools that are used for developing or writing apps.It has a Graphical User Interface which emulates the Android environment. This emulator acts as an actual mobile device on which the developers write their code and then debug/test the same code to check if anything is wrong.
+
+* **What is Application?**
+
+	Answer:
+	The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.
+
+
 
 * **What is an Activity in Android, and why is it important?**
 
