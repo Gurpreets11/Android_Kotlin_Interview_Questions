@@ -78,7 +78,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 	Answer:
 	The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.
 
-* **Explain Android Architecture briefly. **
+* **Explain Android Architecture briefly.**
 
 	Answer:
 	Android architecture is in the form of software stack components.
@@ -94,6 +94,16 @@ This section covers Android-specific topics, including lifecycle management, arc
 <p align="center">
     <img alt="Android architecture" src="https://raw.githubusercontent.com/Gurpreets11/Android_Kotlin_Interview_Questions/master/assets/android-architecture.jpg">
 </p>
+
+
+
+* **Explain the build process in Android?**
+	
+	Answer:
+	The build process in Android involves three steps
+	- The first step consists of the compilation of the resources folder using the Android Asset Packaging Tool (AAPT). These are compiled into a single class file known as R.java, which only holds constants.
+	- In the second step, the java source code needs to be compiled to .class files using javac, which are then converted to Dalvik bytecode using the ‘dx’ tool, which is one of the tools in the software development kit. The final output file is classes.ex.
+	- In the third and final step, the Android apkbuilder is required to take all the inputs and build the Android Packaging Key (APK) file.
 
 
 
