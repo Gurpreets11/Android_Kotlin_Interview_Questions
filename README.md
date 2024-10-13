@@ -83,11 +83,12 @@ This section covers Android-specific topics, including lifecycle management, arc
 	Answer:
 	Android architecture is in the form of software stack components.
 	The below diagram describes the different layers in the Android architecture.
-	•	Linux Kernel: Linux Kernel is placed at the bottom of the software stack and is the foundation of the Android architecture. Using Linux kernel, Android provides a connection between the other layers of the software. It helps to develop drivers like the keypad, display, audio for device manufacture etc.
-	•	Hardware Abstraction Layer (HAL): HAL provides an interface between device drivers and API framework. It consists of library modules which are specific to the hardware component.
-	•	Android Runtime: Linux kernel provides multi-tasking execution environment so that multiple processes can execute each process runs on its own instance of Android Runtime (ART). Android has core runtime libraries like Dalvik VM specific libraries, Java Interoperability Libraries, Android Libraries and C/C++ libraries.
-	•	Application Framework (Java API Framework): The entire android functionalities are available through the API. It consists of multiple services like Activity Manager, Resource Manager, Notification Manager, etc., which form the environment in which the android application runs.
-	•	Applications: The Android application is a top layer and all types of in-built applications such as SMS, Browsers, Contact, etc are included in this top layer. It also includes third party applications which are installed by the user such as Games, etc.
+	- Linux Kernel: Linux Kernel is placed at the bottom of the software stack and is the foundation of the Android architecture. Using Linux kernel, Android provides a connection between the other layers of the software. It helps to develop drivers like the keypad, display, audio for device manufacture etc.
+	- Hardware Abstraction Layer (HAL): HAL provides an interface between device drivers and API framework. It consists of library modules which are specific to the hardware component.
+	- Android Runtime: Linux kernel provides multi-tasking execution environment so that multiple processes can execute each process runs on its own instance of Android Runtime (ART). Android has core runtime libraries like Dalvik VM specific libraries, Java Interoperability Libraries, Android Libraries and C/C++ libraries.
+	- Application Framework (Java API Framework): The entire android functionalities are available through the API. It consists of multiple services like Activity Manager, Resource Manager, Notification Manager, etc., which form the environment in which the android application runs.
+	- Applications: The Android application is a top layer and all types of in-built applications such as SMS, Browsers, Contact, etc are included in this top layer. It also includes third party applications which are installed by the user such as Games, etc.
+
 
 
 <p align="center">
