@@ -65,22 +65,22 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **What is Android?**
 
-	Answer:
+	**Answer:**
 	Android is an open source operating system and is mainly popular for Smartphones and Tablets. This operating system is Linux Kernel based. Using Android operating system, the developer develops the functions or programs which can perform basic as well as the advanced type of operations on the Smartphone.
 
 * **What is Android SDK?**
 
-	Answer:
+	**Answer:**
 	To develop a mobile application, Android developers require some tools and this requirement is satisfied by “Android SDK” which is a set of tools that are used for developing or writing apps.It has a Graphical User Interface which emulates the Android environment. This emulator acts as an actual mobile device on which the developers write their code and then debug/test the same code to check if anything is wrong.
 
 * **What is Application?**
 
-	Answer:
+	**Answer:**
 	The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.
 
 * **Explain Android Architecture briefly.**
 
-	Answer:
+	**Answer:**
 	Android architecture is in the form of software stack components.
 	The below diagram describes the different layers in the Android architecture.
 	- Linux Kernel: Linux Kernel is placed at the bottom of the software stack and is the foundation of the Android architecture. Using Linux kernel, Android provides a connection between the other layers of the software. It helps to develop drivers like the keypad, display, audio for device manufacture etc.
@@ -99,7 +99,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **Explain the build process in Android?**
 	
-	Answer:
+	**Answer:**
 	The build process in Android involves three steps
 	- The first step consists of the compilation of the resources folder using the Android Asset Packaging Tool (AAPT). These are compiled into a single class file known as R.java, which only holds constants.
 	- In the second step, the java source code needs to be compiled to .class files using javac, which are then converted to Dalvik bytecode using the ‘dx’ tool, which is one of the tools in the software development kit. The final output file is classes.ex.
@@ -108,7 +108,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **What are the different tools available in Android development? Explain their functions.**
 	
-	Answer:
+	**Answer:**
 	There are a variety of tools available to help Android developers:
 	- Android Software Development Kit (SDK) and Virtual Device Manager: This tool is used to generate and handle Android Virtual Devices (AVD) and SDKs. Through the emulator in the AVD, you can specify the supported SDK version, storage in the SD card, screen resolution, and other abilities such as GPS and touch screen.
 	- The Android Emulator: The AE is the implementation of the Android Virtual Machine, designed to run processes within a virtual device itself, which can be used on a development computer. The main use of this tool is in testing and debugging of Android applications. 
@@ -120,19 +120,19 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 	**Answer:**
 	The Context in Android, as its name suggests, is the context of the current  state of your application or object. The context comes with services such as giving access to databases and preferences, resolving resources and much more. There are two types of context:
-	- **Activity Context**: This context is attached to the lifecycle of an activity. It should be used when you are passing the context in the scope of an activity or you need the context whose lifecycle is attached to the current context.
-	- **Application Context**: This context is attached to the lifecycle of an application. The application context can be used where you need a context whose lifecycle is separate from the current context or when you are passing a context beyond the scope of an activity.
+	- **Activity Context:** This context is attached to the lifecycle of an activity. It should be used when you are passing the context in the scope of an activity or you need the context whose lifecycle is attached to the current context.
+	- **Application Context:** This context is attached to the lifecycle of an application. The application context can be used where you need a context whose lifecycle is separate from the current context or when you are passing a context beyond the scope of an activity.
 
 
 
 * **What is an Activity in Android, and why is it important?**
 
-    Answer:
-        An Activity represents a single screen with a user interface in Android. It acts as an entry point for interacting with the app's UI. Activities are essential because they manage the lifecycle of the app's UI components and handle user interaction.
+    **Answer:**
+	An Activity represents a single screen with a user interface in Android. It acts as an entry point for interacting with the app's UI. Activities are essential because they manage the lifecycle of the app's UI components and handle user interaction.
 
 * **Explain the Android activity lifecycle.**
 
-    Answer:
+    **Answer:**
         The Android activity lifecycle defines a series of states an activity goes through, from creation to destruction. Key lifecycle methods include:
             onCreate(): Called when the activity is first created.
             onStart(): Called when the activity becomes visible to the user.
@@ -143,18 +143,18 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **What is a Fragment, and how does it differ from an Activity?**
 
-    Answer:
+    **Answer:**
         A Fragment is a reusable portion of UI that can be embedded within an Activity. Unlike an Activity, a fragment cannot exist independently; it must be hosted within an activity. Fragments help in building flexible and reusable UIs, especially in larger screens like tablets.
 
 * **What is the difference between onCreate() and onStart() in an Android Activity?**
 
-    Answer:
+    **Answer:**
         onCreate() is called when the activity is first created, and it is used for initial setup, such as inflating the UI and initializing components.
         onStart() is called just before the activity becomes visible to the user, typically after onCreate(). It is used to start processes that should be visible to the user but not necessarily interactive yet.
 
 * **What are the types of Intent in Android?**
 
-    Answer:
+    **Answer:**
         There are two types of Intent:
             Explicit Intent: Used to launch a specific activity or service by specifying the exact component name.
             Implicit Intent: Used when the component is not specified, and Android resolves the intent to an appropriate app or component that can handle the action (e.g., sharing content or opening a web link).
