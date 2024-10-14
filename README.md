@@ -155,9 +155,9 @@ This section covers Android-specific topics, including lifecycle management, arc
 * **What are the types of Intent in Android?**
 
     **Answer:**
-        There are two types of Intent:
-        - **Explicit Intent:** Used to launch a specific activity or service by specifying the exact component name.
-        - **Implicit Intent:** Used when the component is not specified, and Android resolves the intent to an appropriate app or component that can handle the action (e.g., sharing content or opening a web link).
+	There are two types of Intent:
+	- **Explicit Intent:** Used to launch a specific activity or service by specifying the exact component name.
+	- **Implicit Intent:** Used when the component is not specified, and Android resolves the intent to an appropriate app or component that can handle the action (e.g., sharing content or opening a web link).
 
 
 
