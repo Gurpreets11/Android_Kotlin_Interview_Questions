@@ -227,11 +227,13 @@ Coming soon..
 * **Explain the concept of OOPs and its principles (Inheritance, Encapsulation, Polymorphism, Abstraction).**
 
     **Answer:**
+	
 	**Object-Oriented Programming (OOP):**
         It is a programming paradigm based on the concept of "objects," which can contain data (fields or attributes) and methods (functions).
         It aims to implement real-world entities like inheritance, polymorphism, and encapsulation into programming.
 
     **Principles of OOP:**
+	
     **Inheritance:** It allows one class to inherit the properties and methods of another class. The existing class is called the parent class or superclass, and the derived class is called the child class or subclass.
         
 	**Encapsulation:** It is the mechanism of wrapping the data (fields) and the methods that operate on the data into a single unit, called a class. It also restricts access to the internal state of an object using access modifiers.
@@ -243,6 +245,7 @@ Coming soon..
 * **What are the various access specifiers in Java? Explain their scope.**
 
 	**Answer:**
+	
 	Java provides four access specifiers that determine the scope of a class, variable, method, or constructor:
 	
 	**public:**
@@ -351,4 +354,5 @@ Please ensure your submissions are well-formatted, with clear explanations and r
 ## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 💻 Happy Coding & Best of Luck in Your Interview! 🎯
