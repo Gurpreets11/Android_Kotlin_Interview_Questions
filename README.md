@@ -327,6 +327,14 @@ Coming soon..
 	
 
 
+* **Explain in detail Java 8 Features?**
+
+	**Answer:**
+		Java 8 introduced several major features that significantly enhanced the language, focusing on functional programming, improved concurrency, and ease of development. 
+		
+		[See more](https://buffmycode.com/index.php/2023/05/31/java-8-features/)
+
+
 ## Android Unit Testing
 
 Android Unit Testing Interview Questions and Answers:
