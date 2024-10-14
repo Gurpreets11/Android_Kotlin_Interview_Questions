@@ -206,8 +206,106 @@ Coming soon..
 
 ## Core Java Questions
 
-Coming soon..
+1. What is the difference between JDK, JRE, and JVM?
 
+    JDK (Java Development Kit):
+        It is a development environment for building applications, applets, and components using Java. It includes the JRE, compiler (javac), and other tools (like javadoc and java debugger).
+        It is required for developing Java applications.
+
+    JRE (Java Runtime Environment):
+        It provides the libraries, JVM, and other components to run applications written in Java.
+        It does not contain any development tools like compilers and debuggers.
+        If you only want to run a Java program, JRE is sufficient.
+
+    JVM (Java Virtual Machine):
+        It is a part of JRE responsible for executing Java bytecode.
+        JVM provides a platform-independent way of executing Java code, which is why Java is known as "Write Once, Run Anywhere."
+        It performs several tasks like memory management (using Garbage Collection) and security checks.
+
+2. Explain the concept of OOPs and its principles (Inheritance, Encapsulation, Polymorphism, Abstraction).
+
+    Object-Oriented Programming (OOP):
+        It is a programming paradigm based on the concept of "objects," which can contain data (fields or attributes) and methods (functions).
+        It aims to implement real-world entities like inheritance, polymorphism, and encapsulation into programming.
+
+    Principles of OOP:
+        Inheritance: It allows one class to inherit the properties and methods of another class. The existing class is called the parent class or superclass, and the derived class is called the child class or subclass.
+        Encapsulation: It is the mechanism of wrapping the data (fields) and the methods that operate on the data into a single unit, called a class. It also restricts access to the internal state of an object using access modifiers.
+        Polymorphism: It means "many forms." In Java, it allows one interface to be used for a general class of actions. The two types are compile-time polymorphism (method overloading) and runtime polymorphism (method overriding).
+        Abstraction: It hides the implementation details from the user and only shows the functionality. Abstract classes and interfaces are used to achieve abstraction in Java.
+
+3. What are the various access specifiers in Java? Explain their scope.
+
+Java provides four access specifiers that determine the scope of a class, variable, method, or constructor:
+
+    public:
+        Visible everywhere in the project.
+        It can be accessed from any class, regardless of the package.
+    protected:
+        Visible within the same package and subclasses in different packages.
+        Often used when inheritance is involved.
+    default (no modifier):
+        Visible only within the same package.
+        If no access specifier is specified, it is considered default.
+    private:
+        Visible only within the same class.
+        It cannot be accessed from any other class.
+
+4. What is the difference between == and equals() in Java?
+
+    == Operator:
+        It is a reference comparison operator.
+        It checks whether two references point to the same memory location.
+        For primitive types, it compares the actual values.
+        Example:
+			String str1 = "Hello";
+			String str2 = "Hello";
+			System.out.println(str1 == str2); // true (because they refer to the same memory location)
+
+	equals() Method:
+
+		It is used for content comparison between objects.
+		In the String class, it is overridden to compare the actual contents.
+		Example:
+		
+			String str1 = new String("Hello");
+			String str2 = new String("Hello");
+			System.out.println(str1.equals(str2)); // true (because it compares the content)
+			System.out.println(str1 == str2); // false (because they are different objects)
+
+
+5. What is a constructor in Java? Explain the types of constructors.
+
+    Constructor:
+        A constructor is a special method that is called when an object is instantiated.
+        It initializes the object and sets up its initial state.
+        Constructors do not have a return type, not even void.
+        They must have the same name as the class.
+    Types of Constructors:
+        Default Constructor:
+            A no-argument constructor provided by the compiler if no constructor is defined.
+            It initializes the object with default values.
+            Example:
+			
+			class MyClass {
+				MyClass() {
+					System.out.println("Default constructor called");
+				}
+			}
+
+		Parameterized Constructor:
+
+    A constructor that takes one or more parameters to initialize the object with specific values.
+    Example:
+
+		class MyClass {
+			int x;
+			MyClass(int value) {
+				this.x = value;
+			}
+		}
+	
+			
 
 ## 💡 Useful Resources
 
