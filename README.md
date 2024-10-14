@@ -134,12 +134,12 @@ This section covers Android-specific topics, including lifecycle management, arc
 
     **Answer:**
         The Android activity lifecycle defines a series of states an activity goes through, from creation to destruction. Key lifecycle methods include:
-            **onCreate():** Called when the activity is first created.
-            **onStart():** Called when the activity becomes visible to the user.
-            **onResume():** Called when the activity starts interacting with the user.
-            **onPause():** Called when the activity is partially visible and interacting with the user is paused.
-            **onStop():** Called when the activity is no longer visible to the user.
-            **onDestroy():** Called when the activity is being destroyed.
+        - **onCreate():** Called when the activity is first created.
+        - **onStart():** Called when the activity becomes visible to the user.
+		- **onResume():** Called when the activity starts interacting with the user.
+        - **onPause():** Called when the activity is partially visible and interacting with the user is paused.
+        - **onStop():** Called when the activity is no longer visible to the user.
+        - **onDestroy():** Called when the activity is being destroyed.
 
 * **What is a Fragment, and how does it differ from an Activity?**
 
@@ -149,15 +149,15 @@ This section covers Android-specific topics, including lifecycle management, arc
 * **What is the difference between onCreate() and onStart() in an Android Activity?**
 
     **Answer:**
-        **onCreate()** is called when the activity is first created, and it is used for initial setup, such as inflating the UI and initializing components.
-        **onStart()** is called just before the activity becomes visible to the user, typically after onCreate(). It is used to start processes that should be visible to the user but not necessarily interactive yet.
+        - **onCreate()** is called when the activity is first created, and it is used for initial setup, such as inflating the UI and initializing components.
+        - **onStart()** is called just before the activity becomes visible to the user, typically after onCreate(). It is used to start processes that should be visible to the user but not necessarily interactive yet.
 
 * **What are the types of Intent in Android?**
 
     **Answer:**
         There are two types of Intent:
-            **Explicit Intent:** Used to launch a specific activity or service by specifying the exact component name.
-            **Implicit Intent:** Used when the component is not specified, and Android resolves the intent to an appropriate app or component that can handle the action (e.g., sharing content or opening a web link).
+        - **Explicit Intent:** Used to launch a specific activity or service by specifying the exact component name.
+        - **Implicit Intent:** Used when the component is not specified, and Android resolves the intent to an appropriate app or component that can handle the action (e.g., sharing content or opening a web link).
 
 
 
