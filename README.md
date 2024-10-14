@@ -272,6 +272,7 @@ Coming soon..
     For primitive types, it compares the actual values.
     
 	Example:
+		
 		String str1 = "Hello";
 		String str2 = "Hello";
 		System.out.println(str1 == str2); // true (because they refer to the same memory location)
