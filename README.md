@@ -83,11 +83,11 @@ This section covers Android-specific topics, including lifecycle management, arc
 	**Answer:**
 	Android architecture is in the form of software stack components.
 	The below diagram describes the different layers in the Android architecture.
-	- Linux Kernel: Linux Kernel is placed at the bottom of the software stack and is the foundation of the Android architecture. Using Linux kernel, Android provides a connection between the other layers of the software. It helps to develop drivers like the keypad, display, audio for device manufacture etc.
-	- Hardware Abstraction Layer (HAL): HAL provides an interface between device drivers and API framework. It consists of library modules which are specific to the hardware component.
-	- Android Runtime: Linux kernel provides multi-tasking execution environment so that multiple processes can execute each process runs on its own instance of Android Runtime (ART). Android has core runtime libraries like Dalvik VM specific libraries, Java Interoperability Libraries, Android Libraries and C/C++ libraries.
-	- Application Framework (Java API Framework): The entire android functionalities are available through the API. It consists of multiple services like Activity Manager, Resource Manager, Notification Manager, etc., which form the environment in which the android application runs.
-	- Applications: The Android application is a top layer and all types of in-built applications such as SMS, Browsers, Contact, etc are included in this top layer. It also includes third party applications which are installed by the user such as Games, etc.
+	- **Linux Kernel:** Linux Kernel is placed at the bottom of the software stack and is the foundation of the Android architecture. Using Linux kernel, Android provides a connection between the other layers of the software. It helps to develop drivers like the keypad, display, audio for device manufacture etc.
+	- **Hardware Abstraction Layer (HAL):** HAL provides an interface between device drivers and API framework. It consists of library modules which are specific to the hardware component.
+	- **Android Runtime:** Linux kernel provides multi-tasking execution environment so that multiple processes can execute each process runs on its own instance of Android Runtime (ART). Android has core runtime libraries like Dalvik VM specific libraries, Java Interoperability Libraries, Android Libraries and C/C++ libraries.
+	- **Application Framework (Java API Framework):** The entire android functionalities are available through the API. It consists of multiple services like Activity Manager, Resource Manager, Notification Manager, etc., which form the environment in which the android application runs.
+	- **Applications:** The Android application is a top layer and all types of in-built applications such as SMS, Browsers, Contact, etc are included in this top layer. It also includes third party applications which are installed by the user such as Games, etc.
 
 
 
@@ -110,10 +110,10 @@ This section covers Android-specific topics, including lifecycle management, arc
 	
 	**Answer:**
 	There are a variety of tools available to help Android developers:
-	- Android Software Development Kit (SDK) and Virtual Device Manager: This tool is used to generate and handle Android Virtual Devices (AVD) and SDKs. Through the emulator in the AVD, you can specify the supported SDK version, storage in the SD card, screen resolution, and other abilities such as GPS and touch screen.
-	- The Android Emulator: The AE is the implementation of the Android Virtual Machine, designed to run processes within a virtual device itself, which can be used on a development computer. The main use of this tool is in testing and debugging of Android applications. 
-	- Android Debug Bridge (ADB): The ADB is a command line debugging application doled out with the SDK. It enables developers to communicate with the device, and facilitates actions such as the installation and debugging of an application.
-	- Android Asset Packaging Tool (AAPT): The AAPT builds the ‘.apk’ distributable Android package file.
+	- **Android Software Development Kit (SDK) and Virtual Device Manager:** This tool is used to generate and handle Android Virtual Devices (AVD) and SDKs. Through the emulator in the AVD, you can specify the supported SDK version, storage in the SD card, screen resolution, and other abilities such as GPS and touch screen.
+	- **The Android Emulator:** The AE is the implementation of the Android Virtual Machine, designed to run processes within a virtual device itself, which can be used on a development computer. The main use of this tool is in testing and debugging of Android applications. 
+	- **Android Debug Bridge (ADB):** The ADB is a command line debugging application doled out with the SDK. It enables developers to communicate with the device, and facilitates actions such as the installation and debugging of an application.
+	- **Android Asset Packaging Tool (AAPT):** The AAPT builds the ‘.apk’ distributable Android package file.
 
 
 * **What is Context?**
@@ -134,12 +134,12 @@ This section covers Android-specific topics, including lifecycle management, arc
 
     **Answer:**
         The Android activity lifecycle defines a series of states an activity goes through, from creation to destruction. Key lifecycle methods include:
-            onCreate(): Called when the activity is first created.
-            onStart(): Called when the activity becomes visible to the user.
-            onResume(): Called when the activity starts interacting with the user.
-            onPause(): Called when the activity is partially visible and interacting with the user is paused.
-            onStop(): Called when the activity is no longer visible to the user.
-            onDestroy(): Called when the activity is being destroyed.
+            **onCreate():** Called when the activity is first created.
+            **onStart():** Called when the activity becomes visible to the user.
+            **onResume():** Called when the activity starts interacting with the user.
+            **onPause():** Called when the activity is partially visible and interacting with the user is paused.
+            **onStop():** Called when the activity is no longer visible to the user.
+            **onDestroy():** Called when the activity is being destroyed.
 
 * **What is a Fragment, and how does it differ from an Activity?**
 
@@ -149,15 +149,15 @@ This section covers Android-specific topics, including lifecycle management, arc
 * **What is the difference between onCreate() and onStart() in an Android Activity?**
 
     **Answer:**
-        onCreate() is called when the activity is first created, and it is used for initial setup, such as inflating the UI and initializing components.
-        onStart() is called just before the activity becomes visible to the user, typically after onCreate(). It is used to start processes that should be visible to the user but not necessarily interactive yet.
+        **onCreate()** is called when the activity is first created, and it is used for initial setup, such as inflating the UI and initializing components.
+        **onStart()** is called just before the activity becomes visible to the user, typically after onCreate(). It is used to start processes that should be visible to the user but not necessarily interactive yet.
 
 * **What are the types of Intent in Android?**
 
     **Answer:**
         There are two types of Intent:
-            Explicit Intent: Used to launch a specific activity or service by specifying the exact component name.
-            Implicit Intent: Used when the component is not specified, and Android resolves the intent to an appropriate app or component that can handle the action (e.g., sharing content or opening a web link).
+            **Explicit Intent:** Used to launch a specific activity or service by specifying the exact component name.
+            **Implicit Intent:** Used when the component is not specified, and Android resolves the intent to an appropriate app or component that can handle the action (e.g., sharing content or opening a web link).
 
 
 
