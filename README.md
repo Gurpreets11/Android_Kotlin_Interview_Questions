@@ -334,27 +334,30 @@ Coming soon..
 	**Method Overloading:**
 	It occurs when two or more methods in the same class have the same name but different parameters (type, number, or order).
 	It is a compile-time polymorphism.
+	
 	Example:
-	class MyClass {
-		void display(int a) {}
-		void display(String b) {}
-	}
+	
+		class MyClass {
+			void display(int a) {}
+			void display(String b) {}
+		}
 
 
 	**Method Overriding:**
 
 	It occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass.
 	It is a runtime polymorphism.
+	
 	Example:
 	
-	class Parent {
-		void show() {}
-	}
+		class Parent {
+			void show() {}
+		}
 
-	class Child extends Parent {
-		@Override
-		void show() {}
-	}
+		class Child extends Parent {
+			@Override
+			void show() {}
+		}
 
 
 * **What is an interface, and how is it different from an abstract class?**
@@ -368,9 +371,9 @@ Coming soon..
     
 	**Differences from Abstract Class:**
 
-	Abstract Class: Can have both abstract and concrete methods, instance variables, and constructors.
-	Interface: Cannot have instance variables or constructors. Only contains abstract methods (before Java 8).
-	Multiple Inheritance: A class can implement multiple interfaces but can extend only one abstract class.
+	- Abstract Class: Can have both abstract and concrete methods, instance variables, and constructors.
+	- Interface: Cannot have instance variables or constructors. Only contains abstract methods (before Java 8).
+	- Multiple Inheritance: A class can implement multiple interfaces but can extend only one abstract class.
 
 * **What is the use of the final keyword in Java?**
   **Answer:**
