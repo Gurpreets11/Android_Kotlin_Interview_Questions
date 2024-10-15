@@ -374,30 +374,33 @@ Interface:
 
 The final keyword is used in different contexts:
 
-final variable:
-    Its value cannot be changed once assigned.
-    It becomes a constant.
-    Example: final int MAX_VALUE = 100;
+**final variable:**
+    - Its value cannot be changed once assigned.
+    - It becomes a constant.
+    - Example: 
+	    final int MAX_VALUE = 100;
     
-final method:
-Cannot be overridden by subclasses.
-    Example:
+**final method:**
+- Cannot be overridden by subclasses.
+- Example:
 		
 	class Parent {
-		final void show() {}
+	final void show() {}
 	}
 
-final class:
+**final class:**
 
-Cannot be subclassed.
-
-    Example:
+- Cannot be subclassed.
+- Example:
+	
 	final class MyClass {}
 
 
-final parameter:
-    The parameter value cannot be changed inside the method.
-    Example: void method(final int x) {}
+**final parameter:**
+- The parameter value cannot be changed inside the method.
+- Example: 
+
+	void method(final int x) {}
 
 * **Explain the difference between ArrayList and LinkedList in Java.**
 **Answer:**
