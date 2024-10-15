@@ -330,7 +330,8 @@ Coming soon..
 * **What is the difference between method overloading and method overriding?**
 
 **Answer:**
-Method Overloading:
+
+**Method Overloading:**
 It occurs when two or more methods in the same class have the same name but different parameters (type, number, or order).
 It is a compile-time polymorphism.
 Example:
@@ -340,34 +341,36 @@ Example:
 	}
 
 
-Method Overriding:
+**Method Overriding:**
 
 It occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass.
 It is a runtime polymorphism.
 Example:
 	
-class Parent {
-    void show() {}
-}
+	class Parent {
+		void show() {}
+	}
 
-class Child extends Parent {
-	@Override
-	void show() {}
-}
+	class Child extends Parent {
+		@Override
+		void show() {}
+	}
 
 
 * **What is an interface, and how is it different from an abstract class?**
 **Answer:**
 
-Interface:
-	It is a reference type in Java, similar to a class, that can contain only abstract methods (until Java 7) and default or static methods (from Java 8).
-	All fields in an interface are public, static, and final by default.
-	A class implements an interface and provides implementations for its methods.
+**Interface:**
+
+It is a reference type in Java, similar to a class, that can contain only abstract methods (until Java 7) and default or static methods (from Java 8).
+All fields in an interface are public, static, and final by default.
+A class implements an interface and provides implementations for its methods.
     
-	Differences from Abstract Class:
-    Abstract Class: Can have both abstract and concrete methods, instance variables, and constructors.
-    Interface: Cannot have instance variables or constructors. Only contains abstract methods (before Java 8).
-    Multiple Inheritance: A class can implement multiple interfaces but can extend only one abstract class.
+**Differences from Abstract Class:**
+
+Abstract Class: Can have both abstract and concrete methods, instance variables, and constructors.
+Interface: Cannot have instance variables or constructors. Only contains abstract methods (before Java 8).
+Multiple Inheritance: A class can implement multiple interfaces but can extend only one abstract class.
 
 * **What is the use of the final keyword in Java?**
 **Answer:**
@@ -408,17 +411,19 @@ The final keyword is used in different contexts:
 * **Explain the difference between ArrayList and LinkedList in Java.**
 **Answer:**
 
-ArrayList:
-    - Uses a dynamic array to store elements.
-    - Provides faster access time (O(1)) for accessing elements by index.
-    - Insertion and deletion are slower (O(n)) because elements need to be shifted.
-    - Better for random access and smaller data sets.
+**ArrayList:**
 
-LinkedList:
-    - Uses a doubly linked list to store elements.
-    - Access time is slower (O(n)) as it requires traversal.
-    - Insertion and deletion are faster (O(1)) as it involves adjusting pointers.
-    - Better for frequent insertions and deletions.
+- Uses a dynamic array to store elements.
+- Provides faster access time (O(1)) for accessing elements by index.
+- Insertion and deletion are slower (O(n)) because elements need to be shifted.
+- Better for random access and smaller data sets.
+
+**LinkedList:**
+
+- Uses a doubly linked list to store elements.
+- Access time is slower (O(n)) as it requires traversal.
+- Insertion and deletion are faster (O(1)) as it involves adjusting pointers.
+- Better for frequent insertions and deletions.
 		
 
 
