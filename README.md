@@ -376,9 +376,9 @@ The final keyword is used in different contexts:
 
 **final variable:**
 
-    - Its value cannot be changed once assigned.
-    - It becomes a constant.
-    - Example: 
+  - Its value cannot be changed once assigned.
+  - It becomes a constant.
+  - Example: 
 	    
 		final int MAX_VALUE = 100;
     
