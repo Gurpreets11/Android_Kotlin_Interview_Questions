@@ -329,23 +329,23 @@ Coming soon..
 
 * **What is the difference between method overloading and method overriding?**
 
-**Answer:**
+	**Answer:**
 
-**Method Overloading:**
-It occurs when two or more methods in the same class have the same name but different parameters (type, number, or order).
-It is a compile-time polymorphism.
-Example:
+	**Method Overloading:**
+	It occurs when two or more methods in the same class have the same name but different parameters (type, number, or order).
+	It is a compile-time polymorphism.
+	Example:
 	class MyClass {
 		void display(int a) {}
 		void display(String b) {}
 	}
 
 
-**Method Overriding:**
+	**Method Overriding:**
 
-It occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass.
-It is a runtime polymorphism.
-Example:
+	It occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass.
+	It is a runtime polymorphism.
+	Example:
 	
 	class Parent {
 		void show() {}
@@ -358,26 +358,26 @@ Example:
 
 
 * **What is an interface, and how is it different from an abstract class?**
-**Answer:**
+	**Answer:**
 
-**Interface:**
+	**Interface:**
 
-It is a reference type in Java, similar to a class, that can contain only abstract methods (until Java 7) and default or static methods (from Java 8).
-All fields in an interface are public, static, and final by default.
-A class implements an interface and provides implementations for its methods.
+	It is a reference type in Java, similar to a class, that can contain only abstract methods (until Java 7) and default or static methods (from Java 8).
+	All fields in an interface are public, static, and final by default.
+	A class implements an interface and provides implementations for its methods.
     
-**Differences from Abstract Class:**
+	**Differences from Abstract Class:**
 
-Abstract Class: Can have both abstract and concrete methods, instance variables, and constructors.
-Interface: Cannot have instance variables or constructors. Only contains abstract methods (before Java 8).
-Multiple Inheritance: A class can implement multiple interfaces but can extend only one abstract class.
+	Abstract Class: Can have both abstract and concrete methods, instance variables, and constructors.
+	Interface: Cannot have instance variables or constructors. Only contains abstract methods (before Java 8).
+	Multiple Inheritance: A class can implement multiple interfaces but can extend only one abstract class.
 
 * **What is the use of the final keyword in Java?**
-**Answer:**
+  **Answer:**
 
-The final keyword is used in different contexts:
+  The final keyword is used in different contexts:
 
-**final variable:**
+  **final variable:**
 
   - Its value cannot be changed once assigned.
   - It becomes a constant.
@@ -385,45 +385,46 @@ The final keyword is used in different contexts:
 	    
 		final int MAX_VALUE = 100;
     
-**final method:**
-- Cannot be overridden by subclasses.
-- Example:
+  **final method:**
+  - Cannot be overridden by subclasses.
+  - Example:
 		
 		class Parent {
 		final void show() {}
 		}
 
-**final class:**
+  **final class:**
 
-- Cannot be subclassed.
-- Example:
+  - Cannot be subclassed.
+  - Example:
 	
 		final class MyClass {}
 
 
-**final parameter:**
-- The parameter value cannot be changed inside the method.
-- Example: 
+  **final parameter:**
+  - The parameter value cannot be changed inside the method.
+  - Example: 
 
 		void method(final int x) {}
 		
 
 * **Explain the difference between ArrayList and LinkedList in Java.**
-**Answer:**
 
-**ArrayList:**
+  **Answer:**
 
-- Uses a dynamic array to store elements.
-- Provides faster access time (O(1)) for accessing elements by index.
-- Insertion and deletion are slower (O(n)) because elements need to be shifted.
-- Better for random access and smaller data sets.
+  **ArrayList:**
 
-**LinkedList:**
+  - Uses a dynamic array to store elements.
+  - Provides faster access time (O(1)) for accessing elements by index.
+  - Insertion and deletion are slower (O(n)) because elements need to be shifted.
+  - Better for random access and smaller data sets.
 
-- Uses a doubly linked list to store elements.
-- Access time is slower (O(n)) as it requires traversal.
-- Insertion and deletion are faster (O(1)) as it involves adjusting pointers.
-- Better for frequent insertions and deletions.
+  **LinkedList:**
+
+  - Uses a doubly linked list to store elements.
+  - Access time is slower (O(n)) as it requires traversal.
+  - Insertion and deletion are faster (O(1)) as it involves adjusting pointers.
+  - Better for frequent insertions and deletions.
 		
 
 
