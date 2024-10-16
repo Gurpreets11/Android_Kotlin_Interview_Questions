@@ -434,9 +434,9 @@ Coming soon..
 
 * **What is a HashMap? How does it work internally?**
 
-**Answer:**
+	**Answer:**
 
-**HashMap:**
+	**HashMap:**
 	- It is a part of the Java Collections Framework and implements the Map interface.
 	- It stores key-value pairs, where each key is unique.
 	- Allows one null key and multiple null values.
@@ -450,9 +450,10 @@ Coming soon..
 
 * **What are static methods and variables? Can we override a static method?**
 
-**Answer:**
+	**Answer:**
 
-** static Variables:**
+	** static Variables:**
+	
 	- A static variable belongs to the class rather than an instance.
     - It is shared among all instances of the class.
     - Only one copy exists regardless of the number of objects created.
@@ -464,7 +465,8 @@ Coming soon..
 		}
 
 
-**static Methods:**
+	**static Methods:**
+	
 	- A static method belongs to the class rather than any object of the class.
 	- It can be called without creating an instance of the class.
 	- Cannot access instance variables directly; only static variables or other static methods can be accessed.
