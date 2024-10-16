@@ -209,61 +209,61 @@ Coming soon..
 
 * **What is the difference between JDK, JRE, and JVM?**
 
-**Answer:**
+	**Answer:**
     
-**JDK (Java Development Kit):**
-    It is a development environment for building applications, applets, and components using Java. It includes the JRE, compiler (javac), and other tools (like javadoc and java debugger).
-    It is required for developing Java applications.
+	**JDK (Java Development Kit):**
+        It is a development environment for building applications, applets, and components using Java. It includes the JRE, compiler (javac), and other tools (like javadoc and java debugger).
+        It is required for developing Java applications.
 
-**JRE (Java Runtime Environment):**
-    It provides the libraries, JVM, and other components to run applications written in Java.
-    It does not contain any development tools like compilers and debuggers.
-    If you only want to run a Java program, JRE is sufficient.
+    **JRE (Java Runtime Environment):**
+        It provides the libraries, JVM, and other components to run applications written in Java.
+        It does not contain any development tools like compilers and debuggers.
+        If you only want to run a Java program, JRE is sufficient.
 
-**JVM (Java Virtual Machine):**
-    It is a part of JRE responsible for executing Java bytecode.
-    JVM provides a platform-independent way of executing Java code, which is why Java is known as "Write Once, Run Anywhere."
-    It performs several tasks like memory management (using Garbage Collection) and security checks.
+    **JVM (Java Virtual Machine):**
+        It is a part of JRE responsible for executing Java bytecode.
+        JVM provides a platform-independent way of executing Java code, which is why Java is known as "Write Once, Run Anywhere."
+        It performs several tasks like memory management (using Garbage Collection) and security checks.
 
 * **Explain the concept of OOPs and its principles (Inheritance, Encapsulation, Polymorphism, Abstraction).**
 
-**Answer:**
+    **Answer:**
 	
-**Object-Oriented Programming (OOP):**
-    It is a programming paradigm based on the concept of "objects," which can contain data (fields or attributes) and methods (functions).
-    It aims to implement real-world entities like inheritance, polymorphism, and encapsulation into programming.
+	**Object-Oriented Programming (OOP):**
+        It is a programming paradigm based on the concept of "objects," which can contain data (fields or attributes) and methods (functions).
+        It aims to implement real-world entities like inheritance, polymorphism, and encapsulation into programming.
 
-**Principles of OOP:**
+    **Principles of OOP:**
 	
-**Inheritance:** It allows one class to inherit the properties and methods of another class. The existing class is called the parent class or superclass, and the derived class is called the child class or subclass.
+    **Inheritance:** It allows one class to inherit the properties and methods of another class. The existing class is called the parent class or superclass, and the derived class is called the child class or subclass.
         
-**Encapsulation:** It is the mechanism of wrapping the data (fields) and the methods that operate on the data into a single unit, called a class. It also restricts access to the internal state of an object using access modifiers.
+	**Encapsulation:** It is the mechanism of wrapping the data (fields) and the methods that operate on the data into a single unit, called a class. It also restricts access to the internal state of an object using access modifiers.
         
-**Polymorphism:** It means "many forms." In Java, it allows one interface to be used for a general class of actions. The two types are compile-time polymorphism (method overloading) and runtime polymorphism (method overriding).
+	**Polymorphism:** It means "many forms." In Java, it allows one interface to be used for a general class of actions. The two types are compile-time polymorphism (method overloading) and runtime polymorphism (method overriding).
     
-**Abstraction:** It hides the implementation details from the user and only shows the functionality. Abstract classes and interfaces are used to achieve abstraction in Java.
+	**Abstraction:** It hides the implementation details from the user and only shows the functionality. Abstract classes and interfaces are used to achieve abstraction in Java.
 
 * **What are the various access specifiers in Java? Explain their scope.**
 
-**Answer:**
+	**Answer:**
 	
-Java provides four access specifiers that determine the scope of a class, variable, method, or constructor:
+	Java provides four access specifiers that determine the scope of a class, variable, method, or constructor:
 	
-**public:**
-Visible everywhere in the project.
-It can be accessed from any class, regardless of the package.
+	**public:**
+    Visible everywhere in the project.
+    It can be accessed from any class, regardless of the package.
     
-**protected:**
-Visible within the same package and subclasses in different packages.
-Often used when inheritance is involved.
+	**protected:**
+    Visible within the same package and subclasses in different packages.
+    Often used when inheritance is involved.
     
-**default (no modifier):**
-Visible only within the same package.
-If no access specifier is specified, it is considered default.
+	**default (no modifier):**
+    Visible only within the same package.
+    If no access specifier is specified, it is considered default.
     
-**private:**
-Visible only within the same class.
-It cannot be accessed from any other class.
+	**private:**
+    Visible only within the same class.
+    It cannot be accessed from any other class.
 
 * **What is the difference between == and equals() in Java?**
 
@@ -344,7 +344,6 @@ It cannot be accessed from any other class.
 
 
 	**Method Overriding:**
-
 	It occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass.
 	It is a runtime polymorphism.
 	
