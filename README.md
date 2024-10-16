@@ -432,57 +432,56 @@ Coming soon..
 
 
 
-What is a HashMap? How does it work internally?
+* **What is a HashMap? How does it work internally?**
 
-    HashMap:
-        It is a part of the Java Collections Framework and implements the Map interface.
-        It stores key-value pairs, where each key is unique.
-        Allows one null key and multiple null values.
-        Provides O(1) time complexity for get() and put() operations in the average case.
+**Answer:**
 
-    How HashMap Works Internally:
-        It uses a hashing mechanism where a hash code is generated for each key.
-        The hash code determines the bucket where the key-value pair is stored.
-        If two keys have the same hash code, a collision occurs, and HashMap uses a linked list or binary tree (if the list length exceeds 8) to store multiple values in the same bucket.
-        The HashMap uses load factor (default is 0.75) to decide when to resize the internal array to maintain performance.
+**HashMap:**
+	- It is a part of the Java Collections Framework and implements the Map interface.
+	- It stores key-value pairs, where each key is unique.
+	- Allows one null key and multiple null values.
+	- Provides O(1) time complexity for get() and put() operations in the average case.
 
-11. What are static methods and variables? Can we override a static method?
+	**How HashMap Works Internally:**
+	- It uses a hashing mechanism where a hash code is generated for each key.
+	- The hash code determines the bucket where the key-value pair is stored.
+	- If two keys have the same hash code, a collision occurs, and HashMap uses a linked list or binary tree (if the list length exceeds 8) to store multiple values in the same bucket.
+	- The HashMap uses load factor (default is 0.75) to decide when to resize the internal array to maintain performance.
 
-    static Variables:
-        A static variable belongs to the class rather than an instance.
-        It is shared among all instances of the class.
-        Only one copy exists regardless of the number of objects created.
-        Example:
+* **What are static methods and variables? Can we override a static method?**
+
+**Answer:**
+
+** static Variables:**
+	- A static variable belongs to the class rather than an instance.
+    - It is shared among all instances of the class.
+    - Only one copy exists regardless of the number of objects created.
+    - Example:
 		
 		class Counter {
-    static int count = 0;
-    Counter() { count++; }
-}
+		static int count = 0;
+		Counter() { count++; }
+		}
 
 
-
-static Methods:
-
-    A static method belongs to the class rather than any object of the class.
-    It can be called without creating an instance of the class.
-    Cannot access instance variables directly; only static variables or other static methods can be accessed.
-    Example:
+**static Methods:**
+	- A static method belongs to the class rather than any object of the class.
+	- It can be called without creating an instance of the class.
+	- Cannot access instance variables directly; only static variables or other static methods can be accessed.
+	- Example:
 	
-	
-	
-	
-	class Utility {
-    static void printMessage() {
-        System.out.println("Hello, World!");
-    }
-}
+		class Utility {
+			static void printMessage() {
+				System.out.println("Hello, World!");
+			}
+		}
 
 
 
-Can We Override a static Method?
+**Can We Override a static Method?**
 
-    No, static methods cannot be overridden because method overriding depends on dynamic (runtime) binding, whereas static methods are resolved at compile-time (static binding).
-    However, method hiding can occur if a subclass defines a static method with the same signature as in the parent class. The version of the method called depends on the class type used to make the call, not on the object type.
+	- No, static methods cannot be overridden because method overriding depends on dynamic (runtime) binding, whereas static methods are resolved at compile-time (static binding).
+	- However, method hiding can occur if a subclass defines a static method with the same signature as in the parent class. The version of the method called depends on the class type used to make the call, not on the object type.
 	
 	
 
