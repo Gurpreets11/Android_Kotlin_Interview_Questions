@@ -452,7 +452,7 @@ Coming soon..
 
 	**Answer:**
 
-	** static Variables:**
+	**static Variables:**
 	
 	- A static variable belongs to the class rather than an instance.
     - It is shared among all instances of the class.
@@ -480,7 +480,7 @@ Coming soon..
 
 
 
-**Can We Override a static Method?**
+	**Can We Override a static Method?**
 
 	- No, static methods cannot be overridden because method overriding depends on dynamic (runtime) binding, whereas static methods are resolved at compile-time (static binding).
 	- However, method hiding can occur if a subclass defines a static method with the same signature as in the parent class. The version of the method called depends on the class type used to make the call, not on the object type.
