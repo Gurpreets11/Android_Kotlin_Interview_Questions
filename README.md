@@ -459,10 +459,10 @@ Coming soon..
     - Only one copy exists regardless of the number of objects created.
     - Example:
 		
-		class Counter {
-		static int count = 0;
-		Counter() { count++; }
-		}
+		  class Counter {
+			static int count = 0;
+			Counter() { count++; }
+		  }
 
 
 	**static Methods:**
@@ -472,11 +472,11 @@ Coming soon..
 	- Cannot access instance variables directly; only static variables or other static methods can be accessed.
 	- Example:
 	
-		class Utility {
+		  class Utility {
 			static void printMessage() {
 				System.out.println("Hello, World!");
 			}
-		}
+		  }
 
 
 
