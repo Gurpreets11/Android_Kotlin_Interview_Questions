@@ -563,41 +563,37 @@ Coming soon..
 
 	**Answer:**
 
-**String:**
+	**`String`**:
+   - A `String` in Java represents an immutable sequence of characters.
+   - **Immutable** means that once a `String` object is created, its value cannot be changed.
+   - Any modification, like concatenation or replacement, results in the creation of a new `String` object.
+   - Stored in the **String pool**, which allows for memory optimization by reusing `String` literals.
+   - Example:
+     ```java
+     String s = "Hello";
+     s += " World"; // Creates a new String object, original "Hello" remains unchanged.
+     ```
 
-    A String in Java represents an immutable sequence of characters.
-    Immutable means that once a String object is created, its value cannot be changed.
-    Any modification, like concatenation or replacement, results in the creation of a new String object.
-    Stored in the String pool, which allows for memory optimization by reusing String literals.
-    Example:
-	
-		  String s = "Hello";
-		  s += " World"; // Creates a new String object, original "Hello" remains unchanged.
+	**`StringBuilder`**:
+   - A `StringBuilder` represents a mutable sequence of characters.
+   - **Mutable** means that the object can be modified after it is created without creating a new object.
+   - Suitable for **single-threaded environments** because its methods are not synchronized.
+   - Faster than `String` and `StringBuffer` when modifications are frequent.
+   - Example:
+     ```java
+     StringBuilder sb = new StringBuilder("Hello");
+     sb.append(" World"); // Modifies the original StringBuilder object.
+     ```
 
-
-**StringBuilder:**
-
-    A StringBuilder represents a mutable sequence of characters.
-    Mutable means that the object can be modified after it is created without creating a new object.
-    Suitable for single-threaded environments because its methods are not synchronized.
-    Faster than String and StringBuffer when modifications are frequent.
-    Example:
-	
-		  StringBuilder sb = new StringBuilder("Hello");
-		  sb.append(" World"); // Modifies the original StringBuilder object.
-
-
-**StringBuffer:**
-
-    Like StringBuilder, StringBuffer represents a mutable sequence of characters.
-    Thread-safe because its methods are synchronized, which means it is safe to use in multi-threaded environments.
-    Slower than StringBuilder due to the overhead of synchronization.
-    Example:
-	
-		  StringBuffer sb = new StringBuffer("Hello");
-		  sb.append(" World"); // Modifies the original StringBuffer object.
-
-Differences between String, StringBuilder, and StringBuffer
+	**`StringBuffer`**:
+   - Like `StringBuilder`, `StringBuffer` represents a mutable sequence of characters.
+   - **Thread-safe** because its methods are synchronized, which means it is safe to use in **multi-threaded environments**.
+   - Slower than `StringBuilder` due to the overhead of synchronization.
+   - Example:
+     ```java
+     StringBuffer sb = new StringBuffer("Hello");
+     sb.append(" World"); // Modifies the original StringBuffer object.
+     ```
 
 
 ### Differences between `String`, `StringBuilder`, and `StringBuffer`
