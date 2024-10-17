@@ -610,6 +610,14 @@ Coming soon..
 
 
 
+	**Note:**
+
+    - Use String when you want immutable data and are working with string literals.
+    - Use StringBuilder for mutable strings when working in a single-threaded environment where performance matters.
+    - Use StringBuffer when you need a thread-safe solution for mutable strings in multi-threaded applications.
+
+
+
 
 
 
