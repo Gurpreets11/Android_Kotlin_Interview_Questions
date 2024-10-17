@@ -491,9 +491,65 @@ Coming soon..
 	- However, method hiding can occur if a subclass defines a static method with the same signature as in the parent class. The version of the method called depends on the class type used to make the call, not on the object type.
 	
 	
+* **What is garbage collection in Java, and how does it work?**
+
+    **Garbage Collection:**
+        It is the process of automatically freeing memory by deleting objects that are no longer reachable or needed by the program.
+        Java’s garbage collector manages the memory allocated to objects on the heap.
+
+    **How it Works:**
+        The garbage collector identifies objects that are no longer in use (i.e., objects without any references) and deallocates the memory.
+        The process runs in the background, typically using algorithms like Mark-and-Sweep and Generational Garbage Collection.
+        Mark-and-Sweep: Identifies reachable objects (mark phase) and removes unmarked ones (sweep phase).
+        Generational Garbage Collection: Divides the heap into Young Generation and Old Generation, optimizing for short-lived objects.
+
+* **What is the difference between throw and throws in exception handling?**
+
+    **throw:**
+    - Used to explicitly throw an exception within a method or block.
+    - Can throw both checked and unchecked exceptions.
+        
+	- Example:
+		
+		throw new IllegalArgumentException("Invalid argument");
 
 
+	**throws:**
+
+    - Used in a method signature to declare that a method can throw one or more exceptions.
+    - Indicates that the calling method should handle the exception.
+    - Typically used for checked exceptions.
+    
+	- Example:
 	
+		void readFile() throws IOException {
+		// Code that may throw an IOException
+		}
+
+
+
+
+* **Explain the use of synchronized keyword. How does synchronization work in Java?**
+
+    **synchronized Keyword:**
+    - Used to control access to a shared resource by multiple threads, ensuring that only one thread can access the resource at a time.
+    - Helps prevent thread interference and memory consistency errors.
+
+    **How Synchronization Works:**
+    - **Method Synchronization:** Use synchronized in method signature to lock the method for a single thread.
+		
+		synchronized void increment() { ... }
+		
+	- **Block Synchronization:** Synchronizes a specific block of code inside a method.
+
+		void increment() {
+			synchronized (this) {
+			// Code to synchronize
+			}	
+		}
+
+
+	- Uses a monitor lock (or intrinsic lock) associated with the object. When a thread acquires the lock, other threads cannot access synchronized code blocks of that object until the lock is released.
 
 
 
