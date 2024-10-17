@@ -493,17 +493,21 @@ Coming soon..
 	
 * **What is garbage collection in Java, and how does it work?**
 
+	**Answer:**
+
     **Garbage Collection:**
-        It is the process of automatically freeing memory by deleting objects that are no longer reachable or needed by the program.
-        Java’s garbage collector manages the memory allocated to objects on the heap.
+    - It is the process of automatically freeing memory by deleting objects that are no longer reachable or needed by the program.
+    - Java’s garbage collector manages the memory allocated to objects on the heap.
 
     **How it Works:**
-        The garbage collector identifies objects that are no longer in use (i.e., objects without any references) and deallocates the memory.
-        The process runs in the background, typically using algorithms like Mark-and-Sweep and Generational Garbage Collection.
-        Mark-and-Sweep: Identifies reachable objects (mark phase) and removes unmarked ones (sweep phase).
-        Generational Garbage Collection: Divides the heap into Young Generation and Old Generation, optimizing for short-lived objects.
+	- The garbage collector identifies objects that are no longer in use (i.e., objects without any references) and deallocates the memory.
+    - The process runs in the background, typically using algorithms like Mark-and-Sweep and Generational Garbage Collection.
+    - Mark-and-Sweep: Identifies reachable objects (mark phase) and removes unmarked ones (sweep phase).
+    - Generational Garbage Collection: Divides the heap into Young Generation and Old Generation, optimizing for short-lived objects.
 
 * **What is the difference between throw and throws in exception handling?**
+
+	**Answer:**
 
     **throw:**
     - Used to explicitly throw an exception within a method or block.
@@ -530,6 +534,8 @@ Coming soon..
 
 
 * **Explain the use of synchronized keyword. How does synchronization work in Java?**
+
+	**Answer:**
 
     **synchronized Keyword:**
     - Used to control access to a shared resource by multiple threads, ensuring that only one thread can access the resource at a time.
