@@ -609,8 +609,7 @@ Coming soon..
 
 
 
-
-	**Note:**
+**Note:**
 
     - Use String when you want immutable data and are working with string literals.
     - Use StringBuilder for mutable strings when working in a single-threaded environment where performance matters.
