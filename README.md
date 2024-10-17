@@ -559,10 +559,57 @@ Coming soon..
 
 
 
+* **What is String, StringBuilder, and StringBuffer?**
+
+	**Answer:**
+
+**String:**
+
+    A String in Java represents an immutable sequence of characters.
+    Immutable means that once a String object is created, its value cannot be changed.
+    Any modification, like concatenation or replacement, results in the creation of a new String object.
+    Stored in the String pool, which allows for memory optimization by reusing String literals.
+    Example:
+	
+		  String s = "Hello";
+		  s += " World"; // Creates a new String object, original "Hello" remains unchanged.
 
 
+**StringBuilder:**
+
+    A StringBuilder represents a mutable sequence of characters.
+    Mutable means that the object can be modified after it is created without creating a new object.
+    Suitable for single-threaded environments because its methods are not synchronized.
+    Faster than String and StringBuffer when modifications are frequent.
+    Example:
+	
+		  StringBuilder sb = new StringBuilder("Hello");
+		  sb.append(" World"); // Modifies the original StringBuilder object.
 
 
+**StringBuffer:**
+
+    Like StringBuilder, StringBuffer represents a mutable sequence of characters.
+    Thread-safe because its methods are synchronized, which means it is safe to use in multi-threaded environments.
+    Slower than StringBuilder due to the overhead of synchronization.
+    Example:
+	
+		  StringBuffer sb = new StringBuffer("Hello");
+		  sb.append(" World"); // Modifies the original StringBuffer object.
+
+Differences between String, StringBuilder, and StringBuffer
+
+
+### Differences between `String`, `StringBuilder`, and `StringBuffer`
+
+| **Feature**       | **String**                         | **StringBuilder**                      | **StringBuffer**                       |
+|-------------------|------------------------------------|----------------------------------------|----------------------------------------|
+| **Mutability**    | Immutable                          | Mutable                                | Mutable                                |
+| **Thread-Safety** | Not thread-safe                    | Not thread-safe                        | Thread-safe                            |
+| **Performance**   | Slower for frequent modifications  | Faster than `String` and `StringBuffer` | Slower than `StringBuilder` due to synchronization |
+| **Use Case**      | When immutability is desired       | When fast performance in single-threaded context is needed | When thread safety is required in a multi-threaded context |
+| **Memory Usage**  | Higher, due to creation of new objects | More efficient for modifications      | Similar to `StringBuilder`, but with overhead due to synchronization |
+| **Example**       | `String s = "Hello";`              | `StringBuilder sb = new StringBuilder("Hello");` | `StringBuffer sb = new StringBuffer("Hello");` |
 
 
 
