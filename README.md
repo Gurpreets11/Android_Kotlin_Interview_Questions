@@ -515,7 +515,7 @@ Coming soon..
         
 	- Example:
 		
-		throw new IllegalArgumentException("Invalid argument");
+		  throw new IllegalArgumentException("Invalid argument");
 
 
 	**throws:**
@@ -526,9 +526,9 @@ Coming soon..
     
 	- Example:
 	
-		void readFile() throws IOException {
-		// Code that may throw an IOException
-		}
+		  void readFile() throws IOException {
+		  // Code that may throw an IOException
+		  }
 
 
 
@@ -544,15 +544,15 @@ Coming soon..
     **How Synchronization Works:**
     - **Method Synchronization:** Use synchronized in method signature to lock the method for a single thread.
 		
-		synchronized void increment() { ... }
+		  synchronized void increment() { ... }
 		
 	- **Block Synchronization:** Synchronizes a specific block of code inside a method.
 
-		void increment() {
+		  void increment() {
 			synchronized (this) {
 			// Code to synchronize
 			}	
-		}
+		  }
 
 
 	- Uses a monitor lock (or intrinsic lock) associated with the object. When a thread acquires the lock, other threads cannot access synchronized code blocks of that object until the lock is released.
