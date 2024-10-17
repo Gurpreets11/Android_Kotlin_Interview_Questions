@@ -143,7 +143,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 	- **onDestroy():** Called when the activity is being destroyed.
 	
 	 
-	[Activity Lifecycle Image](/assets/activity_lifecycle.png)
+	![Activity Lifecycle Image](/assets/activity_lifecycle.png)
 	 
 	[Learn Android Activity Lifecycle in detail](https://buffmycode.com/index.php/2024/10/17/activity-and-its-lifecycle-in-android/)
 
