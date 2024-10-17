@@ -142,9 +142,9 @@ This section covers Android-specific topics, including lifecycle management, arc
 	- **onStop():** Called when the activity is no longer visible to the user.
 	- **onDestroy():** Called when the activity is being destroyed.
 	
-	<br/>
+	 
 	[Activity Lifecycle Image](/assets/activity_lifecycle.png)
-	<br/>
+	 
 	[Learn Android Activity Lifecycle in detail](https://buffmycode.com/index.php/2024/10/17/activity-and-its-lifecycle-in-android/)
 
 
