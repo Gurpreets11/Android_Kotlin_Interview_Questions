@@ -133,14 +133,59 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **Explain the Android activity lifecycle.**
 
-    **Answer:**
-	The Android activity lifecycle defines a series of states an activity goes through, from creation to destruction. Key lifecycle methods include:
-	- **onCreate():** Called when the activity is first created.
-	- **onStart():** Called when the activity becomes visible to the user.
-	- **onResume():** Called when the activity starts interacting with the user.
-	- **onPause():** Called when the activity is partially visible and interacting with the user is paused.
-	- **onStop():** Called when the activity is no longer visible to the user.
-	- **onDestroy():** Called when the activity is being destroyed.
+    **Answer:** An Activity's lifecycle is managed by the Android system, which moves it between different states as the user navigates through the app. Here is a breakdown of the Activity lifecycle methods:
+
+    **onCreate()**
+    - Called when: The activity is first created.
+    - Purpose: This is where you should initialize components (e.g., views, data binding), set up the UI using setContentView(), and configure objects that you want to retain throughout the activity's lifecycle.
+    - Example use case: Initializing variables, setting up listeners, or binding views.
+
+    **onStart()**
+    - Called when: The activity is becoming visible to the user.
+    - Purpose: This prepares the activity to be seen by the user, but it may not yet be ready for interaction.
+    - Example use case: Starting animations, updating UI elements.
+
+    **onResume()**
+    - Called when: The activity has become visible and the user can start interacting with it.
+    - Purpose: This is where the activity enters the foreground and starts interacting with the user.
+    - Example use case: Starting camera previews, registering broadcast receivers or sensors, starting animations.
+
+    **onPause()**
+    - Called when: The system is about to start resuming another activity, which means the current activity is going to the background.
+    - Purpose: This method is used to pause ongoing actions or processes that don’t need to continue when the activity is not in the foreground.
+     - Example use case: Pausing animations, stopping sensor updates, saving user data.
+
+    **onStop()**
+    - Called when: The activity is no longer visible to the user, either because another activity is being resumed or the activity is being destroyed.
+    - Purpose: Release resources that are not needed while the activity is not visible.
+    - Example use case: Stopping animations, saving data to databases, releasing resources like network or GPS.
+
+    **onDestroy()**
+    - Called when: The activity is finishing or being destroyed by the system.
+    - Purpose: Clean up any resources like threads or database connections that were created in onCreate().
+    - Example use case: Releasing resources that need to be explicitly closed or releasing binding objects.
+
+    **onRestart()**
+    - Called when: The activity is restarting after being stopped.
+    - Purpose: It comes before onStart() and is used when the activity is being made visible again after being stopped.
+    - Example use case: Restoring UI state, reinitializing resources that were released in onStop().
+
+
+	![Activity Lifecycle Image](/assets/activity_lifecycle.png)
+
+	**Lifecycle Overview**
+
+	The flow of these methods is as follows:
+
+    - onCreate() → onStart() → onResume() (Activity is now running and interacting with the user).
+    - When another activity comes in front, onPause() is called (the activity is partially obscured).
+    - If the activity is no longer visible, onStop() is called.
+    - If the user navigates back to the activity, onRestart() → onStart() → onResume() are called.
+    - If the activity is finished or destroyed by the system, onDestroy() is called.
+
+	Understanding the lifecycle is crucial for managing resources, maintaining state, and ensuring a smooth user experience in Android apps.
+
+
 
 * **What is a Fragment, and how does it differ from an Activity?**
 
