@@ -178,21 +178,41 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **Explain nullable types in Kotlin. What is the ? operator?**
 
-    **Answer:**
-        In Kotlin, a type can be nullable by adding ? to its type. For example, String? means the variable can hold either a String value or null.
+    **Answer:**<br/>In Kotlin, a type can be nullable by adding ? to its type. For example, String? means the variable can hold either a String value or null.
         The ? operator is used to make a type nullable, allowing safe handling of null values.
 
 * **What are Kotlin's primary constructors and secondary constructors?**
 
-    **Answer:**
-        A primary constructor is defined in the class header and is used to initialize class properties.
+    **Answer:**<br/>A primary constructor is defined in the class header and is used to initialize class properties.
         Secondary constructors are defined within the class body using the constructor keyword and are used when more complex initialization is needed.
 
-* **What are data classes in Kotlin?**
+* **What are Data Classes?**<br/>
+    **Answer:**<br/>Data classes are specifically designed to hold the data. 
+    In data classes, the Designers of Kotlin has overrided methods - equals(), hashcode() and toString() internally to feciliate the data holding capabilities.
 
-    **Answer:**
-        Data classes are classes that are used to hold data. They automatically provide useful methods like toString(), hashCode(), equals(), and copy() by default. A data class must have at least one primary constructor parameter.
+    The main uses of data classes - 
+    1. They can be easily copied structurally using copy() function,
+    2. They can be used for destructuring declarations
+    3. They also can inherit classes and interfaces
 
+    Limitations of Data Classes:
+    1. They cannot be open
+    2. They cannot inherit another data class
+    3. varargs cannot be used as arguments in data class as the data class internally needs to generate toString() and hashcode() method's logic.
+
+* **If we create two data class objects with same data then are they equal?**<br/>
+    **Answer:**<br/>Those two data are objects are equal structurally but not referentially. 
+
+    Here is an example:
+    ```Kotlin
+        data class Person(name:String)
+        //creating objects for data class
+        val a = Person("Vamsi")
+        val b = Person("Vamsi")
+        println(a==b) // true; a normal class (without .equals() overridden) would return false in this case
+        println(a===b) // false
+    ```
+	
 * **What is a sealed class in Kotlin, and why is it useful?**
 
     **Answer:**
@@ -200,8 +220,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **What is the purpose of companion object in Kotlin?**
 
-    **Answer:**
-        companion object is used to define static members or functions in a class, similar to static members in Java. It allows you to create a single object associated with a class, giving access to properties and methods that are common to all instances of the class.
+    **Answer:**<br/>companion object is used to define static members or functions in a class, similar to static members in Java. It allows you to create a single object associated with a class, giving access to properties and methods that are common to all instances of the class.
    
 * **lateinit vs lazy?**<br/>
     **Answer:** lateinit can be used for var properties where Kotlin promises the compiler that the variable will be initialized later failure of which will lead to exception.
