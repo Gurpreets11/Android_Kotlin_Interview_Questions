@@ -278,12 +278,12 @@ This section covers Android-specific topics, including lifecycle management, arc
     ```   
 
 
--   **What are various scoping functions in Kotlin and when to use each of them?**<br/>
-    A) There are 5 different scoping functions in Kotlin - let, apply, also, with, run. Basically they are used to execute a block of code within the context of an object.
+* **What are various scoping functions in Kotlin and when to use each of them?**<br/>
+    **Answer:**<br/>There are 5 different scoping functions in Kotlin - let, apply, also, with, run. Basically they are used to execute a block of code within the context of an object.
 
     ***Scope Functions Table:***
 
-    ![Scope Functions Table](/assets/kotlin/scope-funcs-table.png)
+    ![Scope Functions Table](/assets/scope-funcs-table.png)
 
     <b>1. Let:</b> <i>let</i> is an extension function that takes lambda block as parameter, has 'it' as object reference inside the block and returns the lambda block's result as return type.
 
@@ -354,7 +354,7 @@ This section covers Android-specific topics, including lifecycle management, arc
     println(vamsi.age) // 21
     ```
 
-    <b>4. run:</b> <i>run</i> is an extension function that takes  the code block (lambda) as an argument, has 'this' as object reference inside the block and performs the lambda function on the context. Returns the lambda result as return value.
+    <b>5. run:</b> <i>run</i> is an extension function that takes  the code block (lambda) as an argument, has 'this' as object reference inside the block and performs the lambda function on the context. Returns the lambda result as return value.
 
     ```Kotlin
     val vamsi = Person().apply
@@ -365,11 +365,12 @@ This section covers Android-specific topics, including lifecycle management, arc
     }
     println(vamsi.age) // 21
     ```
-
+<!--
     For more details, [Click Here.](https://medium.com/@fatihcoskun/kotlin-scoping-functions-apply-vs-with-let-also-run-816e4efb75f5)
+-->
 
--   **What are inline functions? When to use them?**<br/>
-    A) Functions that take lambda parameter as arguments generates objects inside calling function's code. If these functions are called at multiple places, multiple objects are created which affects the performance of our Android App. To avoid these memory allocations created by lambda expressions (anonymous objects are created), we make the functions inline by adding a keyword - 'inline' to our function.
+* **What are inline functions? When to use them?**<br/>
+    **Answer:**<br/>Functions that take lambda parameter as arguments generates objects inside calling function's code. If these functions are called at multiple places, multiple objects are created which affects the performance of our Android App. To avoid these memory allocations created by lambda expressions (anonymous objects are created), we make the functions inline by adding a keyword - 'inline' to our function.
 
     ```Kotlin
     inline fun SharedPreferences.edit(commit: Boolean = false, action: SharedPreferences.Editor.() -> Unit) {
@@ -384,9 +385,9 @@ This section covers Android-specific topics, including lifecycle management, arc
     ```
     Inline functions are generally used when we need to pass small functions as parameters. It is generally not advisable to pass large functions to inline functions.
 
--   **What are noinline keyword? Where we need to use them in realtime scenario?**
+* **What are noinline keyword? Where we need to use them in realtime scenario?**
 
-    A) We cannot pass a lambda function, which comes as argument inside inline function, to another function that accepts lambda. We will get an error stating 'Illegal usage of inline-parameter'. In this case we need to pass that lambda function with noinline keyword which makes the compiler instead of writing the code to the called location, creates the function for that specific function.
+    **Answer:**<br/>We cannot pass a lambda function, which comes as argument inside inline function, to another function that accepts lambda. We will get an error stating 'Illegal usage of inline-parameter'. In this case we need to pass that lambda function with noinline keyword which makes the compiler instead of writing the code to the called location, creates the function for that specific function.
 
     Here's an example:
     ```Kotlin
@@ -416,9 +417,9 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 
 
--   **What is the use of crossinline in Kotlin?**
+* **What is the use of crossinline in Kotlin?**
     
-    A) When we don't want to return inside lambda function (non-local returns) that is passed as inline argument, we use crossinline keyword on that lambda argument.
+    **Answer:**<br/>When we don't want to return inside lambda function (non-local returns) that is passed as inline argument, we use crossinline keyword on that lambda argument.
     
     Here's an example:
     ```Kotlin
@@ -436,9 +437,9 @@ This section covers Android-specific topics, including lifecycle management, arc
     }
     ```
 
--   **What is the use of infix in Kotlin?**
+* **What is the use of infix in Kotlin?**
 
-    A) infix functions are used for declaring a short form notation of a function.
+    **Answer:**<br/>infix functions are used for declaring a short form notation of a function.
 
     Here's an example:
 
