@@ -215,9 +215,17 @@ This section covers Android-specific topics, including lifecycle management, arc
 	
 * **What is a sealed class in Kotlin, and why is it useful?**
 
-    **Answer:**
-        A sealed class is a class that restricts the inheritance hierarchy. All subclasses of a sealed class must be defined in the same file. This makes it useful when representing restricted or fixed sets of types, such as in state handling or modeling success/failure outcomes.
+    **Answer:**<br/>Sealed classes are similar to enum classes which also has restrictive set of types allowed, except that Sealed classes can contains additional data to be propagated(which we cannot achieve with enum classes).
+	All subclasses of a sealed class must be defined in the same file. This makes it useful when representing restricted or fixed sets of types, such as in state handling or modeling success/failure outcomes.
 
+    ```Kotlin
+    sealed class Result<out T: Any> {
+        data class Success<out T: Any>(val data: T): Result<T>()
+        data class Error(val exception: Exception): Result<Nothing>()
+    }
+    ```
+    Sealed classes can contain any other clases like data class, pojo class, or even other sealed classes.
+	
 * **What is the purpose of companion object in Kotlin?**
 
     **Answer:**<br/>companion object is used to define static members or functions in a class, similar to static members in Java. It allows you to create a single object associated with a class, giving access to properties and methods that are common to all instances of the class.
