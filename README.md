@@ -278,6 +278,180 @@ This section covers Android-specific topics, including lifecycle management, arc
     ```   
 
 
+-   **What are various scoping functions in Kotlin and when to use each of them?**<br/>
+    A) There are 5 different scoping functions in Kotlin - let, apply, also, with, run. Basically they are used to execute a block of code within the context of an object.
+
+    ***Scope Functions Table:***
+
+    ![Scope Functions Table](/assets/kotlin/scope-funcs-table.png)
+
+    <b>1. Let:</b> <i>let</i> is an extension function that takes lambda block as parameter, has 'it' as object reference inside the block and returns the lambda block's result as return type.
+
+    Here's the syntax of let:
+    ```Kotlin
+    inline fun <T, R> T.let(block: (T) -> R): R {
+        return block(this)
+    }
+    ```
+    
+    Here's an example:
+    ```Kotlin
+    val fullName : String = Person()?.let {
+        it.name = "Vamsi"
+        it.name + " Tallapudi" // return value
+    }
+    println(fullName) //Vamsi Tallapudi
+    ```
+    <b>2. with:</b> <i>with</i> takes the context object and the code block (lambda) as the arguments, has 'this' as object reference inside the block and performs the lambda functions operation on the context passed. Returns the lambda result as return value.
+
+    Here's the syntax:
+    ```Kotlin
+    inline fun <T, R> with(receiver: T, block: T.() -> R): R {
+        return receiver.block()
+    }
+    ```
+
+    Here's an example:
+    ```Kotlin
+    val myList = mutableListOf(1, 2, 3, 4, 5)
+    val additionOfSquares = with(myList) {
+        val squaresList= map { it * it }
+        squaresList.sum() //returns the sum value
+    }
+    println(additionOfSquares) // 55
+    ```
+
+    <b>3. apply:</b> <i>apply</i> is an extension function that takes  the code block (lambda) as an argument, has 'this' as object reference inside the block and performs the lambda function on the context. Returns context object as the return value.
+
+    Here's the syntax:
+    ```Kotlin
+    public inline fun <T> T.apply(block: T.() -> Unit): T {
+        ...
+        block()
+        return this
+    }
+    ```
+    Here's an example:
+
+    ```Kotlin
+    val vamsi = Person().apply {
+        name = "Vamsi"
+        age = 21
+    }
+    println(vamsi.age) // 21
+    ```
+
+
+    <b>4. also:</b> <i>also</i> is an extension function that takes  the code block (lambda) as an argument, has 'it' as object reference inside the block and performs the lambda function on the context. Returns context object as the return value.
+
+    ```Kotlin
+    val vamsi = Person().apply
+    {
+        name = "Vamsi"
+    }.also {
+        it.age = 21
+    }
+    println(vamsi.age) // 21
+    ```
+
+    <b>4. run:</b> <i>run</i> is an extension function that takes  the code block (lambda) as an argument, has 'this' as object reference inside the block and performs the lambda function on the context. Returns the lambda result as return value.
+
+    ```Kotlin
+    val vamsi = Person().apply
+    {
+        name = "Vamsi"
+    }.also {
+        it.age = 21
+    }
+    println(vamsi.age) // 21
+    ```
+
+    For more details, [Click Here.](https://medium.com/@fatihcoskun/kotlin-scoping-functions-apply-vs-with-let-also-run-816e4efb75f5)
+
+-   **What are inline functions? When to use them?**<br/>
+    A) Functions that take lambda parameter as arguments generates objects inside calling function's code. If these functions are called at multiple places, multiple objects are created which affects the performance of our Android App. To avoid these memory allocations created by lambda expressions (anonymous objects are created), we make the functions inline by adding a keyword - 'inline' to our function.
+
+    ```Kotlin
+    inline fun SharedPreferences.edit(commit: Boolean = false, action: SharedPreferences.Editor.() -> Unit) {
+        val editor = edit()
+        action(editor)
+        if(commit)
+            editor.commit()
+        else
+            editor.apply()
+
+    }
+    ```
+    Inline functions are generally used when we need to pass small functions as parameters. It is generally not advisable to pass large functions to inline functions.
+
+-   **What are noinline keyword? Where we need to use them in realtime scenario?**
+
+    A) We cannot pass a lambda function, which comes as argument inside inline function, to another function that accepts lambda. We will get an error stating 'Illegal usage of inline-parameter'. In this case we need to pass that lambda function with noinline keyword which makes the compiler instead of writing the code to the called location, creates the function for that specific function.
+
+    Here's an example:
+    ```Kotlin
+    inline fun SharedPreferences.edit(
+    commit: Boolean = false,
+    noinline anotherFunction: Int.() -> Unit = {},
+    action: SharedPreferences.Editor.() -> Unit)
+    {
+        // passing noinline function to another function
+        myFun(anotherFunction)
+
+        val editor = edit()
+        action(editor)
+        if(commit)
+            editor.commit()
+        else
+            editor.apply()
+
+    }
+
+    fun myFun(importantAction: Int.() -> Unit) {
+        importantAction(-1)
+    }
+    ```
+
+    We'll use this only in case if multiple lambdas are passed to function arguments. If there is only one lambda which need to be referenced in another function, we better not use inline function at all.
+
+
+
+-   **What is the use of crossinline in Kotlin?**
+    
+    A) When we don't want to return inside lambda function (non-local returns) that is passed as inline argument, we use crossinline keyword on that lambda argument.
+    
+    Here's an example:
+    ```Kotlin
+    fun createPerson() {
+        val person = Person()
+        person.name = "Vamsi"
+        performFunction {
+            println("Created a person with name: ${person.name}")
+    //        return  // Not allowed here as its crossinline
+        }
+    }
+
+    inline fun performFunction (crossinline x : () -> Unit) {
+        x()
+    }
+    ```
+
+-   **What is the use of infix in Kotlin?**
+
+    A) infix functions are used for declaring a short form notation of a function.
+
+    Here's an example:
+
+    ```Kotlin
+    infix fun Int.printSmallest(x: Int) {
+        print(if(this < x) this else x)
+    }
+
+    1 printSmallest 5 // calling the function directly
+    ```
+
+
+
 
 ## Kotlin Coroutines
 
