@@ -32,4 +32,6 @@
 
     Answer:
         companion object is used to define static members or functions in a class, similar to static members in Java. It allows you to create a single object associated with a class, giving access to properties and methods that are common to all instances of the class.
+
+
    
