@@ -1,6 +1,5 @@
  ## 📘 Android Interview Questions & Answers
-
- 1. What is an Activity in Android, and why is it important?
+* **1. What is an Activity in Android, and why is it important?**
 
     Answer:
         An Activity represents a single screen with a user interface in Android. It acts as an entry point for interacting with the app's UI. Activities are essential because they manage the lifecycle of the app's UI components and handle user interaction.
