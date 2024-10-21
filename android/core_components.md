@@ -9,12 +9,12 @@ Answer:
 
 Answer:
      The Android activity lifecycle defines a series of states an activity goes through, from creation to destruction. Key lifecycle methods include:
-            onCreate(): Called when the activity is first created.
-            onStart(): Called when the activity becomes visible to the user.
-            onResume(): Called when the activity starts interacting with the user.
-            onPause(): Called when the activity is partially visible and interacting with the user is paused.
-            onStop(): Called when the activity is no longer visible to the user.
-            onDestroy(): Called when the activity is being destroyed.
+     - onCreate(): Called when the activity is first created.
+     - onStart(): Called when the activity becomes visible to the user.
+     - onResume(): Called when the activity starts interacting with the user.
+     - onPause(): Called when the activity is partially visible and interacting with the user is paused.
+      - onStop(): Called when the activity is no longer visible to the user.
+      - onDestroy(): Called when the activity is being destroyed.
 
 3. What is a Fragment, and how does it differ from an Activity?
 
