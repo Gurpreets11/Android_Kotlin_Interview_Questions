@@ -13,6 +13,7 @@ A comprehensive collection of frequently asked Android and Kotlin interview ques
    - 📜 [License](#license)
 
 -->
+
 ## 📋 Overview
 
 This repository aims to help Android developers brush up on their Kotlin and Android development skills before interviews. It includes questions that cover a wide range of topics, from basic syntax to advanced concepts, ensuring you’re well-prepared to tackle any technical challenge.
