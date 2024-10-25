@@ -170,18 +170,21 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 
 * **What is a Service?**<br/>
-    A) A service is a component which doesn't have UI and can perform long running operations like downloading stuff, playing music etc.. which can run even exiting the application. By default service runs on main thread. This might cause ANR errors. To avoid this, we can Start service by creating a new background thread or use an IntentService that can do work in background. 
+    **Answer:**
+	A service is a component which doesn't have UI and can perform long running operations like downloading stuff, playing music etc.. which can run even exiting the application. By default service runs on main thread. This might cause ANR errors. To avoid this, we can Start service by creating a new background thread or use an IntentService that can do work in background. 
 	[Read More.](https://developer.android.com/guide/components/services)
 
  
--   **What are different types of services?**<br/>
-    A) These are the three different types of services:
+* **What are different types of services?**<br/>
+    **Answer:** These are the three different types of services:
 
     **Foreground Service:**
     A foreground service performs some operation that is noticeable to the user. For example, an audio app would use a foreground service to play an audio track. Foreground services must display a Notification. Foreground services continue running even when the user isn't interacting with the app. <br/>
-    **Background Service:**
+    
+	**Background Service:**
     A background service performs an operation that isn't directly noticed by the user. For example, if an app used a service to compact its storage, that would usually be a background service. However there are restrictions to use background services from Android API 26 and above. We can use WorkManager to defer these background tasks.<br/>
-    **Bound Service:**
+    
+	**Bound Service:**
     A service is bound when an application component binds to it by calling bindService(). A bound service offers a client-server interface that allows components to interact with the service, send requests, receive results, and even do so across processes with interprocess communication (IPC). A bound service runs only as long as another application component is bound to it. Multiple components can bind to the service at once, but when all of them unbind, the service is destroyed by the system.
     [Read More](https://developer.android.com/guide/components/services#Types-of-services)
 	
