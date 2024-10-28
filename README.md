@@ -210,7 +210,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **What is the difference between a class and an object in Kotlin?**
 
-	**Answer:** A class is a blueprint for creating objects, while an object is a single instance of a class. Objects are often used to implement singletons in Kotlin.
+	**Answer:**<br/>A class is a blueprint for creating objects, while an object is a single instance of a class. Objects are often used to implement singletons in Kotlin.
 
 
 * **What are Data Classes?**<br/>
@@ -258,11 +258,11 @@ This section covers Android-specific topics, including lifecycle management, arc
     **Answer:**<br/>companion object is used to define static members or functions in a class, similar to static members in Java. It allows you to create a single object associated with a class, giving access to properties and methods that are common to all instances of the class.
    
 * **lateinit vs lazy?**<br/>
-    **Answer:** lateinit can be used for var properties where Kotlin promises the compiler that the variable will be initialized later failure of which will lead to exception.
+    **Answer:**<br/>lateinit can be used for var properties where Kotlin promises the compiler that the variable will be initialized later failure of which will lead to exception.
     lazy can only be used for val properties. It will be initialized during the first call where the value will be stored in a cache so that another call to the same variable will serve the value stored in cache.
 
 * **What are the types of equality in Kotlin?**<br>
-    **Answer:** There are two types of equality in Kotlin - <br>
+    **Answer:**<br/>There are two types of equality in Kotlin - <br>
     **1) Referential Equality (===):** It tells whether the two references are pointing to same address or not. In Kotlin it is represented with '===', unlike in Java where it is represented with '=='.
 
     **2) Structural Equality (==):** Structural equality tells whether the data inside objects is equal or not.  Java is  Structural equality in Kotlin is represented by '==' where as in Java it is done by .equals() method.
