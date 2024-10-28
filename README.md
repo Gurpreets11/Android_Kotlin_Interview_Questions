@@ -199,7 +199,120 @@ This section covers Android-specific topics, including lifecycle management, arc
 	**Answer:** A Content Provider is a component that manages a shared set of app data that can be accessed by other apps or components. It provides a standardized interface to access and manipulate data.
 
 
+
+8. How do you pass data between Activities in Android?
+
+Answer: Data can be passed between Activities in Android by using Intent extras or by using the startActivityForResult method.
+
+9. What is the purpose of a Bundle in Android?
+
+Answer: A Bundle is a container for data that can be passed between components in Android, such as Activities, Fragments, or Services. It is often used to save and restore instance state data.
+
+
+
+
+What is the difference between a View and a ViewGroup in Android UI development?
+Answer: In Android UI development, a View represents a UI element such as a button or a text field, while a ViewGroup is a container that holds Views and other ViewGroups. ViewGroup can hold other ViewGroups and Views, and can arrange them in different ways. For example, LinearLayout is a ViewGroup that arranges Views in a linear layout either horizontally or vertically.
+
+2. What is the purpose of XML-based layouts in Android UI development?
+
+Answer: XML-based layouts are used to define the structure and appearance of the user interface for an Android app. These layouts define the position, size, and style of UI elements such as buttons, text fields, and images. By defining layouts in XML, developers can separate the UI design from the app logic, making the code easier to maintain and modify.
+
+3. How do you create a custom View in Android?
+
+Answer: To create a custom View in Android, you need to extend the View class and override its onDraw() method to define the drawing behavior of the custom View. You can then use this custom View in your app’s XML layouts by specifying the fully-qualified name of the custom View class as the XML tag.
+
+4. What are some common UI design principles that should be followed when developing Android apps?
+
+Answer: Some common UI design principles that should be followed when developing Android apps include simplicity, consistency, visibility, feedback, and usability. The UI should be easy to use and understand, with clear labels and intuitive navigation. Feedback should be provided to the user when actions are performed, and consistency should be maintained across the app’s UI.
+
+5. How do you implement a responsive design in Android UI development?
+
+Answer: To implement a responsive design in Android UI development, you can use techniques such as RelativeLayout, ConstraintLayout, or the new GridLayout. These layout managers allow you to define UI elements in relation to each other, ensuring that the UI scales properly across different screen sizes and orientations.
+
+6. How do you handle different screen densities in Android UI development?
+
+Answer: In Android UI development, you can use resource qualifiers such as -hdpi, -xhdpi, and -xxhdpi to specify different versions of UI elements for different screen densities. The system will automatically load the appropriate version of the resource based on the device’s screen density.
+
+7. What is a RecyclerView in Android UI development?
+
+Answer: A RecyclerView is a more flexible and efficient replacement for ListView and GridView in Android UI development. It allows developers to display large sets of data in a scrollable list or grid, with customizable item views and a more efficient data loading and recycling mechanism.
+
+8. How do you implement animations in Android UI development?
+
+Answer: In Android UI development, you can use the Animation and Animator classes to implement animations such as fade-in, fade-out, and slide-in. You can also use the new Transition framework to create more complex animations that involve multiple UI elements.
+
+
+What is a Material Design guideline in Android UI development?
+
+Answer: Material Design is a set of guidelines for Android UI design created by Google. It provides a consistent and intuitive design language for Android apps, with guidelines for typography, color, layout, and animation. Adhering to Material Design guidelines can help developers create more visually appealing and user-friendly apps.
+
+11. What is the purpose of the “match_parent” attribute in Android XML layouts?
+
+Answer: The “match_parent” attribute is used to instruct the View to take up as much space as possible within its parent container. It is often used to create full-screen or dynamically-sized UI components.
+
+<TextView 
+android:layout_width="match_parent" 
+android:layout_height="wrap_content" 
+android:text="This text will take up the full width of its parent"/>
+12. What are some common UI design principles for mobile apps? Answer: Some common UI design principles for mobile apps include simplicity, consistency, feedback, affordance, and discoverability. These principles help ensure that apps are easy to use, intuitive, and visually appealing.
+
+Example:
+
+Simplicity: An app should have a simple and straightforward UI that is easy to navigate and use.
+
+Consistency: An app should have a consistent design language throughout its various screens and components.
+
+Feedback: The app should provide clear feedback to users when they interact with UI components, such as buttons or text inputs.
+
+Affordance: UI components should provide visual cues that indicate their intended function, such as a button that looks like it can be pressed.
+
+Discoverability: All UI components should be easy to discover and accessible to users.
+
+13. How can you improve the performance of an Android app’s UI? Answer: You can improve the performance of an Android app’s UI by reducing the number of layout hierarchies, minimizing the use of expensive graphics, using RecyclerView instead of ListView for long lists, and optimizing animations and transitions.
+
+Example:
+
+Use a RelativeLayout instead of a nested LinearLayout hierarchy to reduce the number of layout passes required.
+Use vector drawables instead of bitmap images to reduce the memory footprint of graphics.
+Use the RecyclerView widget instead of the ListView widget for long lists to improve scrolling performance.
+Use the Lint tool to detect and fix UI performance issues.
+14. What is the purpose of the “dp” (density-independent pixel) unit in Android?
+
+Answer: The “dp” unit is used to specify dimensions in a way that is independent of the device’s screen density. This allows UI components to look the same across devices with different screen densities.
+
+
+	```<Button 
+	android:layout_width="100dp" 
+	android:layout_height="50dp" 
+	android:text="Click me!" />
+	```
 	
+	
+15	What is the purpose of a ViewStub in Android?
+
+Answer: A ViewStub is a lightweight UI component that allows you to defer the inflation of a UI component until it is needed. This can improve app startup times and reduce memory usage.
+
+	```<ViewStub 
+android:id="@+id/stub" 
+android:inflatedId="@+id/my_view" 
+android:layout="@layout/my_layout" 
+android:layout_width="match_parent" 
+android:layout_height="wrap_content" />
+```
+In this example, the ViewStub is set up to inflate the “my_layout” layout file when it is needed. The inflated layout will have the ID “my_view”.
+
+16. How do you handle different screen sizes in Android?
+Answer: You can handle different screen sizes in Android by using layout qualifiers such as “layout-small”, “layout-large”, and “layout-xlarge” to provide different versions of your layout files for different screen sizes. You can also use the “dp” unit to specify dimensions in a way that is independent of the device’s screen density.
+
+```
+res/ layout/ main.xml 
+res/ layout-small/ main.xml 
+res/ layout-large/ main.xml 
+res/ layout-xlarge/ main.xml
+```
+
+
 
 ## Basic Kotlin Questions
 
