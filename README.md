@@ -208,6 +208,11 @@ This section covers Android-specific topics, including lifecycle management, arc
     **Answer:**<br/>A primary constructor is defined in the class header and is used to initialize class properties.
         Secondary constructors are defined within the class body using the constructor keyword and are used when more complex initialization is needed.
 
+* **What is the difference between a class and an object in Kotlin?**
+
+	**Answer:** A class is a blueprint for creating objects, while an object is a single instance of a class. Objects are often used to implement singletons in Kotlin.
+
+
 * **What are Data Classes?**<br/>
     **Answer:**<br/>Data classes are specifically designed to hold the data. 
     In data classes, the Designers of Kotlin has overrided methods - equals(), hashcode() and toString() internally to feciliate the data holding capabilities.
