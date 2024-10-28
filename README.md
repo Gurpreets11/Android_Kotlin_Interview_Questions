@@ -475,6 +475,17 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 
 
+* **What is a lambda expression in Kotlin?**
+
+	**Answer:** <br/>A lambda expression is a way to define a function in Kotlin without creating a separate named function. It allows you to define a function inline, using a more concise syntax. For example, the following code defines a lambda expression that takes two integers and returns their sum: “(x: Int, y: Int) -> x + y”.
+
+* **What is the difference between a lateinit property and an initialized property in Kotlin?**
+
+	**Answer:** <br/>A lateinit property is a property that is declared without an initial value, but is guaranteed to be initialized before it is used. This is useful for properties that cannot be initialized in the constructor, but need to be initialized before they are used. An initialized property, on the other hand, is a property that is declared with an initial value and can be used immediately.
+
+
+
+
 
 ## Kotlin Coroutines
 
