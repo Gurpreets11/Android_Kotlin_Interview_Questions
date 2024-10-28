@@ -317,7 +317,7 @@ res/ layout-xlarge/ main.xml
 
 ##Android App Architecture
 
-What is Model-View-ViewModel (MVVM) architecture and how does it differ from other architectures?
+1. What is Model-View-ViewModel (MVVM) architecture and how does it differ from other architectures?
 Answer: MVVM is a popular architecture pattern for Android apps that separates the app into three distinct components: Model, View, and ViewModel. The Model component represents the data and business logic, the View component represents the UI, and the ViewModel acts as a mediator between the Model and View components. The key advantage of MVVM is that it makes it easier to test each component separately and enables data binding. In contrast, Model-View-Presenter (MVP) separates the View and Presenter components, while Clean Architecture uses layers to separate business logic from the presentation layer.
 
 2. How do you implement the MVVM architecture in an Android app using Jetpack?
