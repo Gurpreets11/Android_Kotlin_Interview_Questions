@@ -189,6 +189,17 @@ This section covers Android-specific topics, including lifecycle management, arc
     [Read More](https://developer.android.com/guide/components/services#Types-of-services)
 	
 	
+	
+5. What is a Broadcast Receiver in Android?
+
+Answer: A Broadcast Receiver is a component that listens for system or app events and performs tasks based on those events. It is used to receive and respond to broadcast messages from other components or system events.
+
+6. What is a Content Provider in Android?
+
+Answer: A Content Provider is a component that manages a shared set of app data that can be accessed by other apps or components. It provides a standardized interface to access and manipulate data.
+
+
+	
 
 ## Basic Kotlin Questions
 
