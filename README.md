@@ -231,9 +231,9 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 	**Answer:** To implement a responsive design in Android UI development, you can use techniques such as RelativeLayout, ConstraintLayout, or the new GridLayout. These layout managers allow you to define UI elements in relation to each other, ensuring that the UI scales properly across different screen sizes and orientations.
 
-6. How do you handle different screen densities in Android UI development?
+* **How do you handle different screen densities in Android UI development?**
 
-Answer: In Android UI development, you can use resource qualifiers such as -hdpi, -xhdpi, and -xxhdpi to specify different versions of UI elements for different screen densities. The system will automatically load the appropriate version of the resource based on the device’s screen density.
+	**Answer:** In Android UI development, you can use resource qualifiers such as -hdpi, -xhdpi, and -xxhdpi to specify different versions of UI elements for different screen densities. The system will automatically load the appropriate version of the resource based on the device’s screen density.
 
 7. What is a RecyclerView in Android UI development?
 
