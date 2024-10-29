@@ -200,19 +200,20 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 
 
-8. How do you pass data between Activities in Android?
+* **How do you pass data between Activities in Android?**
 
-Answer: Data can be passed between Activities in Android by using Intent extras or by using the startActivityForResult method.
+	**Answer:** Data can be passed between Activities in Android by using Intent extras or by using the startActivityForResult method.
 
-9. What is the purpose of a Bundle in Android?
+* **What is the purpose of a Bundle in Android?**
 
-Answer: A Bundle is a container for data that can be passed between components in Android, such as Activities, Fragments, or Services. It is often used to save and restore instance state data.
-
-
+	**Answer:** A Bundle is a container for data that can be passed between components in Android, such as Activities, Fragments, or Services. It is often used to save and restore instance state data.
 
 
-What is the difference between a View and a ViewGroup in Android UI development?
-Answer: In Android UI development, a View represents a UI element such as a button or a text field, while a ViewGroup is a container that holds Views and other ViewGroups. ViewGroup can hold other ViewGroups and Views, and can arrange them in different ways. For example, LinearLayout is a ViewGroup that arranges Views in a linear layout either horizontally or vertically.
+
+
+* **What is the difference between a View and a ViewGroup in Android UI development?**
+	**Answer:** In Android UI development, a View represents a UI element such as a button or a text field, while a ViewGroup is a container that holds Views and other ViewGroups. ViewGroup can hold other ViewGroups and Views, and can arrange them in different ways. For example, LinearLayout is a ViewGroup that arranges Views in a linear layout either horizontally or vertically.
+
 
 2. What is the purpose of XML-based layouts in Android UI development?
 
