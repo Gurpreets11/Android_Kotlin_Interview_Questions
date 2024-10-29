@@ -282,24 +282,25 @@ Use the Lint tool to detect and fix UI performance issues.
 Answer: The “dp” unit is used to specify dimensions in a way that is independent of the device’s screen density. This allows UI components to look the same across devices with different screen densities.
 
 
-	```<Button 
-	android:layout_width="100dp" 
-	android:layout_height="50dp" 
-	android:text="Click me!" />
-	```
+```<Button 
+android:layout_width="100dp" 
+android:layout_height="50dp" 
+android:text="Click me!" />
+```
 	
 	
 15	What is the purpose of a ViewStub in Android?
 
 Answer: A ViewStub is a lightweight UI component that allows you to defer the inflation of a UI component until it is needed. This can improve app startup times and reduce memory usage.
 
-	```<ViewStub 
+```<ViewStub 
 android:id="@+id/stub" 
 android:inflatedId="@+id/my_view" 
 android:layout="@layout/my_layout" 
 android:layout_width="match_parent" 
 android:layout_height="wrap_content" />
 ```
+
 In this example, the ViewStub is set up to inflate the “my_layout” layout file when it is needed. The inflated layout will have the ID “my_view”.
 
 16. How do you handle different screen sizes in Android?
