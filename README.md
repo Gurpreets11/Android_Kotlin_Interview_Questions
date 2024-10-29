@@ -215,13 +215,13 @@ This section covers Android-specific topics, including lifecycle management, arc
 	**Answer:** In Android UI development, a View represents a UI element such as a button or a text field, while a ViewGroup is a container that holds Views and other ViewGroups. ViewGroup can hold other ViewGroups and Views, and can arrange them in different ways. For example, LinearLayout is a ViewGroup that arranges Views in a linear layout either horizontally or vertically.
 
 
-2. What is the purpose of XML-based layouts in Android UI development?
+* **What is the purpose of XML-based layouts in Android UI development?**
 
-Answer: XML-based layouts are used to define the structure and appearance of the user interface for an Android app. These layouts define the position, size, and style of UI elements such as buttons, text fields, and images. By defining layouts in XML, developers can separate the UI design from the app logic, making the code easier to maintain and modify.
+	**Answer:** XML-based layouts are used to define the structure and appearance of the user interface for an Android app. These layouts define the position, size, and style of UI elements such as buttons, text fields, and images. By defining layouts in XML, developers can separate the UI design from the app logic, making the code easier to maintain and modify.
 
-3. How do you create a custom View in Android?
+* **How do you create a custom View in Android?**
 
-Answer: To create a custom View in Android, you need to extend the View class and override its onDraw() method to define the drawing behavior of the custom View. You can then use this custom View in your app’s XML layouts by specifying the fully-qualified name of the custom View class as the XML tag.
+	**Answer:** To create a custom View in Android, you need to extend the View class and override its onDraw() method to define the drawing behavior of the custom View. You can then use this custom View in your app’s XML layouts by specifying the fully-qualified name of the custom View class as the XML tag.
 
 4. What are some common UI design principles that should be followed when developing Android apps?
 
