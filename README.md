@@ -223,9 +223,9 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 	**Answer:** To create a custom View in Android, you need to extend the View class and override its onDraw() method to define the drawing behavior of the custom View. You can then use this custom View in your app’s XML layouts by specifying the fully-qualified name of the custom View class as the XML tag.
 
-4. What are some common UI design principles that should be followed when developing Android apps?
+* **What are some common UI design principles that should be followed when developing Android apps?**
 
-Answer: Some common UI design principles that should be followed when developing Android apps include simplicity, consistency, visibility, feedback, and usability. The UI should be easy to use and understand, with clear labels and intuitive navigation. Feedback should be provided to the user when actions are performed, and consistency should be maintained across the app’s UI.
+	**Answer:** Some common UI design principles that should be followed when developing Android apps include simplicity, consistency, visibility, feedback, and usability. The UI should be easy to use and understand, with clear labels and intuitive navigation. Feedback should be provided to the user when actions are performed, and consistency should be maintained across the app’s UI.
 
 5. How do you implement a responsive design in Android UI development?
 
