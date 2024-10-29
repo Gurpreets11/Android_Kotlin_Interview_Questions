@@ -235,9 +235,9 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 	**Answer:** In Android UI development, you can use resource qualifiers such as -hdpi, -xhdpi, and -xxhdpi to specify different versions of UI elements for different screen densities. The system will automatically load the appropriate version of the resource based on the device’s screen density.
 
-7. What is a RecyclerView in Android UI development?
+* **What is a RecyclerView in Android UI development?**
 
-Answer: A RecyclerView is a more flexible and efficient replacement for ListView and GridView in Android UI development. It allows developers to display large sets of data in a scrollable list or grid, with customizable item views and a more efficient data loading and recycling mechanism.
+	**Answer:** A RecyclerView is a more flexible and efficient replacement for ListView and GridView in Android UI development. It allows developers to display large sets of data in a scrollable list or grid, with customizable item views and a more efficient data loading and recycling mechanism.
 
 8. How do you implement animations in Android UI development?
 
