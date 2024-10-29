@@ -227,9 +227,9 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 	**Answer:** Some common UI design principles that should be followed when developing Android apps include simplicity, consistency, visibility, feedback, and usability. The UI should be easy to use and understand, with clear labels and intuitive navigation. Feedback should be provided to the user when actions are performed, and consistency should be maintained across the app’s UI.
 
-5. How do you implement a responsive design in Android UI development?
+* **How do you implement a responsive design in Android UI development?**
 
-Answer: To implement a responsive design in Android UI development, you can use techniques such as RelativeLayout, ConstraintLayout, or the new GridLayout. These layout managers allow you to define UI elements in relation to each other, ensuring that the UI scales properly across different screen sizes and orientations.
+	**Answer:** To implement a responsive design in Android UI development, you can use techniques such as RelativeLayout, ConstraintLayout, or the new GridLayout. These layout managers allow you to define UI elements in relation to each other, ensuring that the UI scales properly across different screen sizes and orientations.
 
 6. How do you handle different screen densities in Android UI development?
 
