@@ -252,10 +252,13 @@ Answer: Material Design is a set of guidelines for Android UI design created by 
 
 Answer: The “match_parent” attribute is used to instruct the View to take up as much space as possible within its parent container. It is often used to create full-screen or dynamically-sized UI components.
 
+```
 <TextView 
 android:layout_width="match_parent" 
 android:layout_height="wrap_content" 
 android:text="This text will take up the full width of its parent"/>
+```
+
 12. What are some common UI design principles for mobile apps? Answer: Some common UI design principles for mobile apps include simplicity, consistency, feedback, affordance, and discoverability. These principles help ensure that apps are easy to use, intuitive, and visually appealing.
 
 Example:
