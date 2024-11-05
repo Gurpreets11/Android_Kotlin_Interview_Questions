@@ -394,7 +394,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 * **What is the difference between var and val in Kotlin?**
 
     **Answer:**
-    - var is used to declare a mutable variable, meaning its value can be changed.
+	- var is used to declare a mutable variable, meaning its value can be changed.
     - val is used to declare an immutable variable, meaning its value cannot be changed after it's assigned.
 
 * **Explain nullable types in Kotlin. What is the ? operator?**
@@ -404,7 +404,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **What are Kotlin's primary constructors and secondary constructors?**
 
-    **Answer:**<br/>A primary constructor is defined in the class header and is used to initialize class properties.
+    **Answer:**<br/>A primary constructor is defined in the class header and is used to initialize class properties.<br/>
     Secondary constructors are defined within the class body using the constructor keyword and are used when more complex initialization is needed.
 
 * **What is the difference between a class and an object in Kotlin?**
@@ -414,7 +414,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **What are Data Classes?**<br/>
     **Answer:**<br/>Data classes are specifically designed to hold the data. 
-    In data classes, the Designers of Kotlin has overrided methods - equals(), hashcode() and toString() internally to feciliate the data holding capabilities.
+    In data classes, the Designers of Kotlin has overrided methods - **equals()**, **hashcode()** and **toString()** internally to feciliate the data holding capabilities.
 
     The main uses of data classes - 
     1. They can be easily copied structurally using copy() function,
