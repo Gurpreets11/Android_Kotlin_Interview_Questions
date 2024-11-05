@@ -405,7 +405,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 * **What are Kotlin's primary constructors and secondary constructors?**
 
     **Answer:**<br/>A primary constructor is defined in the class header and is used to initialize class properties.
-        Secondary constructors are defined within the class body using the constructor keyword and are used when more complex initialization is needed.
+    Secondary constructors are defined within the class body using the constructor keyword and are used when more complex initialization is needed.
 
 * **What is the difference between a class and an object in Kotlin?**
 
