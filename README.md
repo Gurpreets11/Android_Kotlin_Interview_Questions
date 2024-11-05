@@ -335,9 +335,9 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 	**Answer:** To implement MVVM architecture using Jetpack, you can use the following components:
 
-	LiveData: A lifecycle-aware observable data holder that can be used to communicate changes between the ViewModel and View components.
-	ViewModel: A class that stores and manages UI-related data, communicates with the Model component, and survives configuration changes.
-	DataBinding: A library that enables UI components to bind to data sources in the ViewModel and eliminates the need for findViewById() calls. You can also use other Jetpack components such as Room for database operations, Navigation for navigating between screens, and WorkManager for background processing.
+	- **LiveData:** A lifecycle-aware observable data holder that can be used to communicate changes between the ViewModel and View components.
+	- **ViewModel:** A class that stores and manages UI-related data, communicates with the Model component, and survives configuration changes.
+	- **DataBinding:** A library that enables UI components to bind to data sources in the ViewModel and eliminates the need for findViewById() calls. You can also use other Jetpack components such as Room for database operations, Navigation for navigating between screens, and WorkManager for background processing.
 
 * **What is dependency injection and how does it improve app architecture?**
 
