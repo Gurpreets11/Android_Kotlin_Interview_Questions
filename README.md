@@ -264,15 +264,15 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 	**Example:**
 
-	- Simplicity: An app should have a simple and straightforward UI that is easy to navigate and use.
+	- **Simplicity:** An app should have a simple and straightforward UI that is easy to navigate and use.
 
-	- Consistency: An app should have a consistent design language throughout its various screens and components.
+	- **Consistency:** An app should have a consistent design language throughout its various screens and components.
 
-	- Feedback: The app should provide clear feedback to users when they interact with UI components, such as buttons or text inputs.
+	- **Feedback:** The app should provide clear feedback to users when they interact with UI components, such as buttons or text inputs.
 
-	- Affordance: UI components should provide visual cues that indicate their intended function, such as a button that looks like it can be pressed.
+	- **Affordance:** UI components should provide visual cues that indicate their intended function, such as a button that looks like it can be pressed.
 
-	- Discoverability: All UI components should be easy to discover and accessible to users.
+	- **Discoverability:** All UI components should be easy to discover and accessible to users.
 
 * **How can you improve the performance of an Android app’s UI?** 
 
