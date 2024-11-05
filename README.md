@@ -394,13 +394,13 @@ This section covers Android-specific topics, including lifecycle management, arc
 * **What is the difference between var and val in Kotlin?**
 
     **Answer:**
-        var is used to declare a mutable variable, meaning its value can be changed.
-        val is used to declare an immutable variable, meaning its value cannot be changed after it's assigned.
+    - var is used to declare a mutable variable, meaning its value can be changed.
+    - val is used to declare an immutable variable, meaning its value cannot be changed after it's assigned.
 
 * **Explain nullable types in Kotlin. What is the ? operator?**
 
-    **Answer:**<br/>In Kotlin, a type can be nullable by adding ? to its type. For example, String? means the variable can hold either a String value or null.
-        The ? operator is used to make a type nullable, allowing safe handling of null values.
+    **Answer:**<br/>In Kotlin, a type can be nullable by adding ? to its type. For example, String? means the variable can hold either a String value or null.<br/>
+    The ? operator is used to make a type nullable, allowing safe handling of null values.
 
 * **What are Kotlin's primary constructors and secondary constructors?**
 
