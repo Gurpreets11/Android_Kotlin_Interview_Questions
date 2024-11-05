@@ -315,12 +315,12 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 	**Answer:** You can handle different screen sizes in Android by using layout qualifiers such as “layout-small”, “layout-large”, and “layout-xlarge” to provide different versions of your layout files for different screen sizes. You can also use the “dp” unit to specify dimensions in a way that is independent of the device’s screen density.
 
-```
+  ```
   res/ layout/ main.xml 
   res/ layout-small/ main.xml 
   res/ layout-large/ main.xml 
   res/ layout-xlarge/ main.xml
-```
+  ```
 
 
 
@@ -328,62 +328,64 @@ This section covers Android-specific topics, including lifecycle management, arc
 ### Android App Architecture
 
 * **What is Model-View-ViewModel (MVVM) architecture and how does it differ from other architectures?**
-Answer: MVVM is a popular architecture pattern for Android apps that separates the app into three distinct components: Model, View, and ViewModel. The Model component represents the data and business logic, the View component represents the UI, and the ViewModel acts as a mediator between the Model and View components. The key advantage of MVVM is that it makes it easier to test each component separately and enables data binding. In contrast, Model-View-Presenter (MVP) separates the View and Presenter components, while Clean Architecture uses layers to separate business logic from the presentation layer.
+
+	**Answer:** MVVM is a popular architecture pattern for Android apps that separates the app into three distinct components: Model, View, and ViewModel. The Model component represents the data and business logic, the View component represents the UI, and the ViewModel acts as a mediator between the Model and View components. The key advantage of MVVM is that it makes it easier to test each component separately and enables data binding. In contrast, Model-View-Presenter (MVP) separates the View and Presenter components, while Clean Architecture uses layers to separate business logic from the presentation layer.
 
 * **How do you implement the MVVM architecture in an Android app using Jetpack?**
 
-Answer: To implement MVVM architecture using Jetpack, you can use the following components:
+	**Answer:** To implement MVVM architecture using Jetpack, you can use the following components:
 
-LiveData: A lifecycle-aware observable data holder that can be used to communicate changes between the ViewModel and View components.
-ViewModel: A class that stores and manages UI-related data, communicates with the Model component, and survives configuration changes.
-DataBinding: A library that enables UI components to bind to data sources in the ViewModel and eliminates the need for findViewById() calls. You can also use other Jetpack components such as Room for database operations, Navigation for navigating between screens, and WorkManager for background processing.
+	LiveData: A lifecycle-aware observable data holder that can be used to communicate changes between the ViewModel and View components.
+	ViewModel: A class that stores and manages UI-related data, communicates with the Model component, and survives configuration changes.
+	DataBinding: A library that enables UI components to bind to data sources in the ViewModel and eliminates the need for findViewById() calls. You can also use other Jetpack components such as Room for database operations, Navigation for navigating between screens, and WorkManager for background processing.
 
 * **What is dependency injection and how does it improve app architecture?**
 
-Answer: Dependency injection is a technique for managing dependencies between objects in an app. Instead of creating objects directly, you use a dependency injection framework such as Dagger to provide the required objects. This makes the app more modular, testable, and maintainable, as each component can be easily replaced or modified without affecting the rest of the app. It also reduces code duplication and improves code readability.
+	**Answer:** Dependency injection is a technique for managing dependencies between objects in an app. Instead of creating objects directly, you use a dependency injection framework such as Dagger to provide the required objects. This makes the app more modular, testable, and maintainable, as each component can be easily replaced or modified without affecting the rest of the app. It also reduces code duplication and improves code readability.
 
 * **What is the role of Dagger in app architecture and how does it work?**
-Answer: Dagger is a popular dependency injection framework for Android that simplifies the process of managing dependencies in an app. It uses annotations to generate code that provides dependencies to other classes, eliminating the need for manual dependency injection. The main advantage of Dagger is that it enables modular app design and makes it easier to test components in isolation. It works by creating a graph of dependencies at compile time, and then using that graph to provide dependencies to the app at runtime.
+
+	**Answer:** Dagger is a popular dependency injection framework for Android that simplifies the process of managing dependencies in an app. It uses annotations to generate code that provides dependencies to other classes, eliminating the need for manual dependency injection. The main advantage of Dagger is that it enables modular app design and makes it easier to test components in isolation. It works by creating a graph of dependencies at compile time, and then using that graph to provide dependencies to the app at runtime.
 
 * **How does the ViewModel component in Jetpack improve app architecture?**
 
-Answer: The ViewModel component in Jetpack is designed to store and manage UI-related data, such as the state of the UI and user input. It survives configuration changes, such as screen rotations, by using a lifecycle-aware mechanism that retains its state. This reduces the need for workarounds such as saving state to a Bundle, and makes it easier to separate the presentation layer from the data layer. It also enables sharing of data between multiple UI components, such as Fragments, and promotes a more modular app architecture.
+	**Answer:** The ViewModel component in Jetpack is designed to store and manage UI-related data, such as the state of the UI and user input. It survives configuration changes, such as screen rotations, by using a lifecycle-aware mechanism that retains its state. This reduces the need for workarounds such as saving state to a Bundle, and makes it easier to separate the presentation layer from the data layer. It also enables sharing of data between multiple UI components, such as Fragments, and promotes a more modular app architecture.
 
 * **What is the role of LiveData in Jetpack and how does it enable reactive programming?**
 
-Answer: LiveData is a lifecycle-aware observable data holder that can be used to communicate changes between the ViewModel and View components in an Android app. It enables reactive programming by allowing the View to observe changes in the ViewModel’s data, and update the UI accordingly. This eliminates the need for manual UI updates, reduces boilerplate code, and improves performance. LiveData also respects the lifecycle of the app components, such as Fragments and Activities, and automatically removes observers when they are no longer needed, preventing memory leaks.
+	**Answer:** LiveData is a lifecycle-aware observable data holder that can be used to communicate changes between the ViewModel and View components in an Android app. It enables reactive programming by allowing the View to observe changes in the ViewModel’s data, and update the UI accordingly. This eliminates the need for manual UI updates, reduces boilerplate code, and improves performance. LiveData also respects the lifecycle of the app components, such as Fragments and Activities, and automatically removes observers when they are no longer needed, preventing memory leaks.
 
 * **Can you explain the differences between the Model-View-Controller (MVC) and Model-View-Presenter (MVP) patterns in Android app development?**
 
-Answer: The MVC pattern separates the app into three components: the model (data and business logic), the view (user interface), and the controller (mediator between the model and the view). The MVP pattern builds on the MVC pattern by adding a presenter that acts as an intermediary between the view and the model, handling user input and updating the view accordingly. In MVP, the view and the model are decoupled, making it easier to test the app.
+	**Answer:** The MVC pattern separates the app into three components: the model (data and business logic), the view (user interface), and the controller (mediator between the model and the view). The MVP pattern builds on the MVC pattern by adding a presenter that acts as an intermediary between the view and the model, handling user input and updating the view accordingly. In MVP, the view and the model are decoupled, making it easier to test the app.
 
 * **How does the Model-View-ViewModel (MVVM) pattern differ from the Model-View-Presenter (MVP) pattern in Android development?**
 
-Answer: In MVVM, the view is bound to a ViewModel, which handles the presentation logic and state management. The ViewModel is responsible for retrieving and preparing data for the view to display. This pattern allows for better separation of concerns and makes it easier to test the code. Unlike in MVP, the view and the ViewModel are not coupled directly.
+	**Answer:** In MVVM, the view is bound to a ViewModel, which handles the presentation logic and state management. The ViewModel is responsible for retrieving and preparing data for the view to display. This pattern allows for better separation of concerns and makes it easier to test the code. Unlike in MVP, the view and the ViewModel are not coupled directly.
 
 * **Can you explain the benefits of using the Clean Architecture pattern in Android app development?**
 
-Answer: The Clean Architecture pattern promotes separation of concerns and isolation of business logic from the framework and infrastructure layers. This makes the app more maintainable, testable, and scalable. The pattern consists of several layers, including domain, use cases, and data layers.
+	**Answer:** The Clean Architecture pattern promotes separation of concerns and isolation of business logic from the framework and infrastructure layers. This makes the app more maintainable, testable, and scalable. The pattern consists of several layers, including domain, use cases, and data layers.
 
 * **How does the use of LiveData in Jetpack improve app architecture in Android development?**
 
-Answer: LiveData is a Jetpack component that provides observable data to the UI layer. It allows for more efficient and responsive updates to the UI by automatically updating the view when the data changes. LiveData also helps to decouple the view from the business logic, making the app more maintainable.
+	**Answer:** LiveData is a Jetpack component that provides observable data to the UI layer. It allows for more efficient and responsive updates to the UI by automatically updating the view when the data changes. LiveData also helps to decouple the view from the business logic, making the app more maintainable.
 
 * **Can you explain the purpose of ViewModel in Jetpack and how it relates to the UI layer in Android development?**
 
-Answer: ViewModel is a Jetpack component that provides a lifecycle-aware container for the UI-related data. ViewModel holds data for the UI, and it survives configuration changes. It keeps the data separate from the UI and provides a clean separation of concerns between the UI and data layers.
+	**Answer:** ViewModel is a Jetpack component that provides a lifecycle-aware container for the UI-related data. ViewModel holds data for the UI, and it survives configuration changes. It keeps the data separate from the UI and provides a clean separation of concerns between the UI and data layers.
 
 * **How does the use of Dagger in Android app development improve app architecture?**
 
-Answer: Dagger is a dependency injection framework that simplifies the management of dependencies in the app. It helps to decouple the components of the app and allows for easier testing and maintenance. It also helps to avoid boilerplate code and increases code reuse.
+	**Answer:** Dagger is a dependency injection framework that simplifies the management of dependencies in the app. It helps to decouple the components of the app and allows for easier testing and maintenance. It also helps to avoid boilerplate code and increases code reuse.
 
 * **Can you explain how the Repository pattern works in Android app development?**
 
-Answer: The Repository pattern is used to manage data from different sources (such as a local database or a remote API) in a single place. The repository mediates between the data sources and the app, providing a layer of abstraction and making it easier to swap out data sources without affecting the rest of the app.
+	**Answer:** The Repository pattern is used to manage data from different sources (such as a local database or a remote API) in a single place. The repository mediates between the data sources and the app, providing a layer of abstraction and making it easier to swap out data sources without affecting the rest of the app.
 
 * **Can you explain how the Dependency Inversion Principle (DIP) is implemented in Android app development?**
 
-Answer: The Dependency Inversion Principle states that high-level modules should not depend on low-level modules. Instead, both should depend on abstractions. In Android app development, this means that the code should be written in a way that the business logic does not depend on the implementation details of the framework or infrastructure.
+	**Answer:** The Dependency Inversion Principle states that high-level modules should not depend on low-level modules. Instead, both should depend on abstractions. In Android app development, this means that the code should be written in a way that the business logic does not depend on the implementation details of the framework or infrastructure.
 
 
 
