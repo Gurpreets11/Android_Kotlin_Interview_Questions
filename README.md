@@ -241,16 +241,16 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **How do you implement animations in Android UI development?**
 
-Answer: In Android UI development, you can use the Animation and Animator classes to implement animations such as fade-in, fade-out, and slide-in. You can also use the new Transition framework to create more complex animations that involve multiple UI elements.
+	**Answer:** In Android UI development, you can use the Animation and Animator classes to implement animations such as fade-in, fade-out, and slide-in. You can also use the new Transition framework to create more complex animations that involve multiple UI elements.
 
 
 * **What is a Material Design guideline in Android UI development?**
 
-Answer: Material Design is a set of guidelines for Android UI design created by Google. It provides a consistent and intuitive design language for Android apps, with guidelines for typography, color, layout, and animation. Adhering to Material Design guidelines can help developers create more visually appealing and user-friendly apps.
+	**Answer:** Material Design is a set of guidelines for Android UI design created by Google. It provides a consistent and intuitive design language for Android apps, with guidelines for typography, color, layout, and animation. Adhering to Material Design guidelines can help developers create more visually appealing and user-friendly apps.
 
 * **What is the purpose of the “match_parent” attribute in Android XML layouts?**
 
-Answer: The “match_parent” attribute is used to instruct the View to take up as much space as possible within its parent container. It is often used to create full-screen or dynamically-sized UI components.
+	**Answer:** The “match_parent” attribute is used to instruct the View to take up as much space as possible within its parent container. It is often used to create full-screen or dynamically-sized UI components.
 
 ```
 <TextView 
@@ -260,9 +260,9 @@ android:text="This text will take up the full width of its parent"/>
 ```
 
 * **What are some common UI design principles for mobile apps?**
- Answer: Some common UI design principles for mobile apps include simplicity, consistency, feedback, affordance, and discoverability. These principles help ensure that apps are easy to use, intuitive, and visually appealing.
+	**Answer:** Some common UI design principles for mobile apps include simplicity, consistency, feedback, affordance, and discoverability. These principles help ensure that apps are easy to use, intuitive, and visually appealing.
 
-Example:
+**Example:**
 
 Simplicity: An app should have a simple and straightforward UI that is easy to navigate and use.
 
@@ -275,7 +275,7 @@ Affordance: UI components should provide visual cues that indicate their intende
 Discoverability: All UI components should be easy to discover and accessible to users.
 
 * **How can you improve the performance of an Android app’s UI?** 
-Answer: You can improve the performance of an Android app’s UI by reducing the number of layout hierarchies, minimizing the use of expensive graphics, using RecyclerView instead of ListView for long lists, and optimizing animations and transitions.
+**Answer:** You can improve the performance of an Android app’s UI by reducing the number of layout hierarchies, minimizing the use of expensive graphics, using RecyclerView instead of ListView for long lists, and optimizing animations and transitions.
 
 Example:
 
@@ -283,9 +283,10 @@ Use a RelativeLayout instead of a nested LinearLayout hierarchy to reduce the nu
 Use vector drawables instead of bitmap images to reduce the memory footprint of graphics.
 Use the RecyclerView widget instead of the ListView widget for long lists to improve scrolling performance.
 Use the Lint tool to detect and fix UI performance issues.
+
 * **What is the purpose of the “dp” (density-independent pixel) unit in Android?**
 
-Answer: The “dp” unit is used to specify dimensions in a way that is independent of the device’s screen density. This allows UI components to look the same across devices with different screen densities.
+**Answer:** The “dp” unit is used to specify dimensions in a way that is independent of the device’s screen density. This allows UI components to look the same across devices with different screen densities.
 
 
 ```<Button 
@@ -297,7 +298,7 @@ android:text="Click me!" />
 	
 * **What is the purpose of a ViewStub in Android?**
 
-Answer: A ViewStub is a lightweight UI component that allows you to defer the inflation of a UI component until it is needed. This can improve app startup times and reduce memory usage.
+**Answer:** A ViewStub is a lightweight UI component that allows you to defer the inflation of a UI component until it is needed. This can improve app startup times and reduce memory usage.
 
 ```<ViewStub 
 android:id="@+id/stub" 
@@ -310,7 +311,7 @@ android:layout_height="wrap_content" />
 In this example, the ViewStub is set up to inflate the “my_layout” layout file when it is needed. The inflated layout will have the ID “my_view”.
 
 * **How do you handle different screen sizes in Android?**
-Answer: You can handle different screen sizes in Android by using layout qualifiers such as “layout-small”, “layout-large”, and “layout-xlarge” to provide different versions of your layout files for different screen sizes. You can also use the “dp” unit to specify dimensions in a way that is independent of the device’s screen density.
+**Answer:** You can handle different screen sizes in Android by using layout qualifiers such as “layout-small”, “layout-large”, and “layout-xlarge” to provide different versions of your layout files for different screen sizes. You can also use the “dp” unit to specify dimensions in a way that is independent of the device’s screen density.
 
 ```
 res/ layout/ main.xml 
