@@ -275,7 +275,8 @@ This section covers Android-specific topics, including lifecycle management, arc
 	- Discoverability: All UI components should be easy to discover and accessible to users.
 
 * **How can you improve the performance of an Android app’s UI?** 
-**Answer:** You can improve the performance of an Android app’s UI by reducing the number of layout hierarchies, minimizing the use of expensive graphics, using RecyclerView instead of ListView for long lists, and optimizing animations and transitions.
+
+	**Answer:** You can improve the performance of an Android app’s UI by reducing the number of layout hierarchies, minimizing the use of expensive graphics, using RecyclerView instead of ListView for long lists, and optimizing animations and transitions.
 
 	**Example:**
 
@@ -286,39 +287,39 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 * **What is the purpose of the “dp” (density-independent pixel) unit in Android?**
 
-**Answer:** The “dp” unit is used to specify dimensions in a way that is independent of the device’s screen density. This allows UI components to look the same across devices with different screen densities.
+	**Answer:** The “dp” unit is used to specify dimensions in a way that is independent of the device’s screen density. This allows UI components to look the same across devices with different screen densities.
 
 
-    ```<Button 
-    android:layout_width="100dp" 
-    android:layout_height="50dp" 
-    android:text="Click me!" />
-    ```
+  ```<Button 
+  android:layout_width="100dp" 
+  android:layout_height="50dp" 
+  android:text="Click me!" />
+  ```
 	
 	
 * **What is the purpose of a ViewStub in Android?**
 
-**Answer:** A ViewStub is a lightweight UI component that allows you to defer the inflation of a UI component until it is needed. This can improve app startup times and reduce memory usage.
+	**Answer:** A ViewStub is a lightweight UI component that allows you to defer the inflation of a UI component until it is needed. This can improve app startup times and reduce memory usage.
 
-    ```<ViewStub 
-    android:id="@+id/stub" 
-    android:inflatedId="@+id/my_view" 
-    android:layout="@layout/my_layout" 
-    android:layout_width="match_parent" 
-    android:layout_height="wrap_content" />
-    ```
+  ```<ViewStub 
+  android:id="@+id/stub" 
+  android:inflatedId="@+id/my_view" 
+  android:layout="@layout/my_layout" 
+  android:layout_width="match_parent" 
+  android:layout_height="wrap_content" />
+  ```
 
-In this example, the ViewStub is set up to inflate the “my_layout” layout file when it is needed. The inflated layout will have the ID “my_view”.
+	In this example, the ViewStub is set up to inflate the “my_layout” layout file when it is needed. The inflated layout will have the ID “my_view”.
 
 * **How do you handle different screen sizes in Android?**
 
-**Answer:** You can handle different screen sizes in Android by using layout qualifiers such as “layout-small”, “layout-large”, and “layout-xlarge” to provide different versions of your layout files for different screen sizes. You can also use the “dp” unit to specify dimensions in a way that is independent of the device’s screen density.
+	**Answer:** You can handle different screen sizes in Android by using layout qualifiers such as “layout-small”, “layout-large”, and “layout-xlarge” to provide different versions of your layout files for different screen sizes. You can also use the “dp” unit to specify dimensions in a way that is independent of the device’s screen density.
 
 ```
-res/ layout/ main.xml 
-res/ layout-small/ main.xml 
-res/ layout-large/ main.xml 
-res/ layout-xlarge/ main.xml
+  res/ layout/ main.xml 
+  res/ layout-small/ main.xml 
+  res/ layout-large/ main.xml 
+  res/ layout-xlarge/ main.xml
 ```
 
 
