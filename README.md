@@ -1266,75 +1266,75 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 
 ## Version Control
 
-What is version control, and why is it important in software development?
+* **What is version control, and why is it important in software development?
 
-How do you use Git to create a new repository?
+* **How do you use Git to create a new repository?
 
-What is a commit, and how do you create a new one in Git?
+* **What is a commit, and how do you create a new one in Git?
 
-What is a branch in Git, and why might you use one?
+* **What is a branch in Git, and why might you use one?
 
-How do you switch between Git branches?
+* **How do you switch between Git branches?
 
-What is a merge conflict, and how do you resolve one in Git?
+* **What is a merge conflict, and how do you resolve one in Git?
 
-What is a pull request in Git, and how does it work?
+* **What is a pull request in Git, and how does it work?
 
-How do you use Git to revert a commit?
+* **How do you use Git to revert a commit?
 
-What is a Git tag, and how might you use one?
+* **What is a Git tag, and how might you use one?
 
-What are some best practices for using version control systems like Git?
+* **What are some best practices for using version control systems like Git?
 
 
 ## Play Store and App Deployment
 
-What are the different types of release tracks available for publishing apps on Google Play Store?
+* **What are the different types of release tracks available for publishing apps on Google Play Store?
 
-What is app signing?
+* **What is app signing?
 
-What is an app bundle?
+* **What is an app bundle?
 
-What is the difference between a staged rollout and a full rollout?
+* **What is the difference between a staged rollout and a full rollout?
 
-What is the role of release management in app publishing?
+* **What is the role of release management in app publishing?
 
-How do you add in-app purchases to an Android app?
+* **How do you add in-app purchases to an Android app?
 
-What are the different pricing models available for Android apps on the Google Play Store?
+* **What are the different pricing models available for Android apps on the Google Play Store?
 
-What is the difference between a private and a public app on the Google Play Store?
+* **What is the difference between a private and a public app on the Google Play Store?
 
-What is the role of the Google Play Console in app publishing?
+* **What is the role of the Google Play Console in app publishing?
 
-What are the best practices for optimizing app listing on the Google Play Store?
+* **What are the best practices for optimizing app listing on the Google Play Store?
 
 
 
 ## Accessibility
 
-What are accessibility services in Android, and how can they be used to enhance the usability of an app?
+* **What are accessibility services in Android, and how can they be used to enhance the usability of an app?
 
-What are the guidelines for designing an accessible user interface in Android apps?
+* **What are the guidelines for designing an accessible user interface in Android apps?
 
-How can you test the accessibility of an Android app?
+* **How can you test the accessibility of an Android app?
 
-What are some common accessibility issues that you have encountered in Android app development?
+* **What are some common accessibility issues that you have encountered in Android app development?
 
-How can you ensure that your app is accessible to users with visual impairments?
+* **How can you ensure that your app is accessible to users with visual impairments?
 
-How can you make an app accessible to users with hearing impairments?
+* **How can you make an app accessible to users with hearing impairments?
 
-How can you design an app that is accessible to users with motor impairments?
+* **How can you design an app that is accessible to users with motor impairments?
 
-What are some best practices for developing accessible forms in Android apps?
+* **What are some best practices for developing accessible forms in Android apps?
 
-What are some accessibility considerations for developing games and multimedia apps?
+* **What are some accessibility considerations for developing games and multimedia apps?
 
-What are some resources that developers can use to learn more about accessibility in Android app development?
+* **What are some resources that developers can use to learn more about accessibility in Android app development?
 
 
-Third-party Libraries and APIs
+## Third-party Libraries and APIs
 
 What is a third-party library in Android development? Give an example of a popular third-party library used in Android development.
 
@@ -1350,7 +1350,7 @@ What is an open-source library in Android development? Give an example of a popu
 What is the process for adding a third-party library to an Android project? Describe the steps.
 
 
-Problem-Solving Skills
+## Problem-Solving Skills
 
 What is your process for debugging an Android app that is crashing unexpectedly?
 
