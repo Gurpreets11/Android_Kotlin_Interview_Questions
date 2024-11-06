@@ -1336,65 +1336,65 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 
 ## Third-party Libraries and APIs
 
-* **What is a third-party library in Android development? Give an example of a popular third-party library used in Android development.
+* **What is a third-party library in Android development? Give an example of a popular third-party library used in Android development.**
 
-* **What is an API in Android development? Give an example of a popular API used in Android development.
+* **What is an API in Android development? Give an example of a popular API used in Android development.**
 
-* **What is Google Play Services in Android development? How is it used?
+* **What is Google Play Services in Android development? How is it used?**
 
-* **What is Firebase in Android development? How is it used?
+* **What is Firebase in Android development? How is it used?**
 
 
-* **What is an open-source library in Android development? Give an example of a popular open-source library used in Android development.
+* **What is an open-source library in Android development? Give an example of a popular open-source library used in Android development.**
 
-* **What is the process for adding a third-party library to an Android project? Describe the steps.
+* **What is the process for adding a third-party library to an Android project? Describe the steps.**
 
 
 ## Problem-Solving Skills
 
-* **What is your process for debugging an Android app that is crashing unexpectedly?
+* **What is your process for debugging an Android app that is crashing unexpectedly?**
 
-* **How would you optimize the performance of an app that is running slowly?
+* **How would you optimize the performance of an app that is running slowly?**
 
-* **What are some common security threats that Android apps face, and how would you protect against them?
+* **What are some common security threats that Android apps face, and how would you protect against them?**
 
-* **How would you design an app that is accessible for people with disabilities?
+* **How would you design an app that is accessible for people with disabilities?**
 
-* **How would you approach adding a new feature to an existing app?
+* **How would you approach adding a new feature to an existing app?**
 
-* **What steps would you take to troubleshoot a crash in an Android app?
+* **What steps would you take to troubleshoot a crash in an Android app?**
 
-* **What is your approach to debugging a network-related issue in an Android app?
+* **What is your approach to debugging a network-related issue in an Android app?**
 
-* **How would you go about optimizing the performance of an Android app?
+* **How would you go about optimizing the performance of an Android app?**
 
-* **Can you explain how you would handle memory leaks in an Android app?
+* **Can you explain how you would handle memory leaks in an Android app?**
 
-* **How would you implement offline caching in an Android app?
+* **How would you implement offline caching in an Android app?**
 
-* **What is your approach to testing an Android app with different screen resolutions and densities?
+* **What is your approach to testing an Android app with different screen resolutions and densities?**
 
 
 
 ## Some High Level Questions based on JD
 
-* **What is your experience with Android SDK and NDK?
+* **What is your experience with Android SDK and NDK?**
 
-* **How do you ensure that your applications run on most available Android devices?
+* **How do you ensure that your applications run on most available Android devices?**
 
-* **How do you ensure that your code is well-structured and maintainable?
+* **How do you ensure that your code is well-structured and maintainable?**
 
-* **What is your experience with third-party API integration like Facebook, Twitter, and Payment Gateways?
+* **What is your experience with third-party API integration like Facebook, Twitter, and Payment Gateways?**
 
-* **What is your experience with Android Google Maps API and other location-based services?
+* **What is your experience with Android Google Maps API and other location-based services?**
 
-* **How do you ensure that your applications are well-designed and user-friendly?
+* **How do you ensure that your applications are well-designed and user-friendly?**
 
-* **How do you ensure that your applications are secure and protected from vulnerabilities?
+* **How do you ensure that your applications are secure and protected from vulnerabilities?**
 
-* **What is your experience in using data structures and algorithms?
+* **What is your experience in using data structures and algorithms?**
 
-* **How do you ensure that your applications are performant and efficient?
+* **How do you ensure that your applications are performant and efficient?**
 
 
 
