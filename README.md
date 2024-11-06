@@ -1376,8 +1376,25 @@ What is your approach to testing an Android app with different screen resolution
 
 
 
+## Some High Level Questions based on JD
 
+What is your experience with Android SDK and NDK?
 
+How do you ensure that your applications run on most available Android devices?
+
+How do you ensure that your code is well-structured and maintainable?
+
+What is your experience with third-party API integration like Facebook, Twitter, and Payment Gateways?
+
+What is your experience with Android Google Maps API and other location-based services?
+
+How do you ensure that your applications are well-designed and user-friendly?
+
+How do you ensure that your applications are secure and protected from vulnerabilities?
+
+What is your experience in using data structures and algorithms?
+
+How do you ensure that your applications are performant and efficient?
 
 
 
