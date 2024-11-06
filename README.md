@@ -696,6 +696,38 @@ This section covers Android-specific topics, including lifecycle management, arc
 Coming soon..
 
 
+## Advance Question
+
+* **What is Retrofit and how does it work?**
+
+* **What is the difference between Gson and Jackson libraries for JSON parsing in Android?**
+
+* **What is Room and how is it used for data persistence in Android?**
+
+* **What is the difference between synchronous and asynchronous network requests in Android?**
+
+
+* **What is Retrofit in Android? How does it work?**
+
+* **What is Room in Android? How is it different from SQLite?**
+
+* **What is the difference between REST and SOAP APIs?**
+
+* **How do you handle network requests in Android?**
+
+* **What is Okhttp?**
+
+* **What is the purpose of the Cache-Control header in HTTP requests?**
+
+* **What is JSON? How is it used in Android app development?**
+
+<!--   
+Reference:
+ 
+https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-edition-2024-part-i-11d5c517e9f6
+
+-->
+
 
 ## Core Java Questions
 
