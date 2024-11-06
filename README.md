@@ -1093,7 +1093,6 @@ This section covers Android-specific topics, including lifecycle management, arc
    3. Use StringBuffer when you need a thread-safe solution for mutable strings in multi-threaded applications.
 
 
-
 * **How to make object thread-safe without synchronisation?**
    - **Immutable Objects**: If an object doesn’t have any mutable state, it’s inherently thread-safe. Once created, its state cannot change, so there’s no need for synchronization.
    - **Thread-Local Storage**: Use ThreadLocal variables when you need to maintain state that is unique to a thread. This way, each thread has its own instance of a variable, and no synchronization is needed.
@@ -1112,7 +1111,6 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 
 
-
 ## Kotlin Coroutines
 
 Coming soon..
@@ -1127,7 +1125,6 @@ Coming soon..
 * **What is Room and how is it used for data persistence in Android?**
 
 * **What is the difference between synchronous and asynchronous network requests in Android?**
-
 
 * **What is Retrofit in Android? How does it work?**
 
@@ -1263,7 +1260,6 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 * **How can you protect sensitive data in Android apps?**
 
 	
-
 ## Version Control
 
 * **What is version control, and why is it important in software development?**
@@ -1310,7 +1306,6 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 * **What are the best practices for optimizing app listing on the Google Play Store?**
 
 
-
 ## Accessibility
 
 * **What are accessibility services in Android, and how can they be used to enhance the usability of an app?**
@@ -1343,7 +1338,6 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 * **What is Google Play Services in Android development? How is it used?**
 
 * **What is Firebase in Android development? How is it used?**
-
 
 * **What is an open-source library in Android development? Give an example of a popular open-source library used in Android development.**
 
@@ -1397,7 +1391,10 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 * **How do you ensure that your applications are performant and efficient?**
 
 
-
+<!-- 
+Reference
+https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-edition-2024-part-iii-eb1fe01c2f9e
+-->
 
 ## 💡 Useful Resources
 
