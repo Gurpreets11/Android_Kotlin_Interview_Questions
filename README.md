@@ -689,46 +689,6 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 
 
-
-
-## Kotlin Coroutines
-
-Coming soon..
-
-
-## Advance Question
-
-* **What is Retrofit and how does it work?**
-
-* **What is the difference between Gson and Jackson libraries for JSON parsing in Android?**
-
-* **What is Room and how is it used for data persistence in Android?**
-
-* **What is the difference between synchronous and asynchronous network requests in Android?**
-
-
-* **What is Retrofit in Android? How does it work?**
-
-* **What is Room in Android? How is it different from SQLite?**
-
-* **What is the difference between REST and SOAP APIs?**
-
-* **How do you handle network requests in Android?**
-
-* **What is Okhttp?**
-
-* **What is the purpose of the Cache-Control header in HTTP requests?**
-
-* **What is JSON? How is it used in Android app development?**
-
-<!--   
-Reference:
- 
-https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-edition-2024-part-i-11d5c517e9f6
-
--->
-
-
 ## Core Java Questions
 
 * **What is the difference between JDK, JRE, and JVM?**
@@ -1150,6 +1110,108 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 	
 	Java 8 introduced several major features that significantly enhanced the language, focusing on functional programming, improved concurrency, and ease of development. Learn java 8 features in details [from here](https://buffmycode.com/index.php/2023/05/31/java-8-features/)
 
+
+
+
+## Kotlin Coroutines
+
+Coming soon..
+
+
+## Advance Question
+
+* **What is Retrofit and how does it work?**
+
+* **What is the difference between Gson and Jackson libraries for JSON parsing in Android?**
+
+* **What is Room and how is it used for data persistence in Android?**
+
+* **What is the difference between synchronous and asynchronous network requests in Android?**
+
+
+* **What is Retrofit in Android? How does it work?**
+
+* **What is Room in Android? How is it different from SQLite?**
+
+* **What is the difference between REST and SOAP APIs?**
+
+* **How do you handle network requests in Android?**
+
+* **What is Okhttp?**
+
+* **What is the purpose of the Cache-Control header in HTTP requests?**
+
+* **What is JSON? How is it used in Android app development?**
+
+<!--   
+Reference:
+ 
+https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-edition-2024-part-i-11d5c517e9f6
+
+-->
+
+
+## Multithreading and Concurrency
+
+What is the difference between a process and a thread in Android?
+
+
+What are the different ways to implement multithreading in Android?
+
+What is the difference between AsyncTask and Thread in Android?
+
+What is synchronization in Android, and why is it important?
+
+What is a deadlock in multithreading, and how can it be prevented?
+
+What is a Handler in Android, and how does it work?
+
+What is a race condition in multithreading, and how can it be prevented?
+
+What is the difference between a synchronous and asynchronous operation in Android?
+
+What is a ThreadPoolExecutor in Android, and how does it work?
+
+What is the role of a ContentProvider in Android, and how is it related to multithreading?
+
+
+
+
+## Performance Optimization
+
+What are the different types of performance issues you have encountered in Android apps? How did you identify and resolve them?
+
+
+
+What is the difference between using ListView and RecyclerView for displaying large sets of data in an Android app? When would you choose one over the other?
+
+
+What is the purpose of using a cache in an Android app? What are some strategies you can use to implement a cache?
+
+
+How do you handle memory leaks in an Android app? What tools can you use to detect and fix memory leaks?
+
+Can you explain what caching is and how it can be used to improve the performance of an Android app?
+
+
+What is memory management in Android, and how can it be optimized for better performance?
+
+What is performance profiling in Android, and how can it be used to identify performance bottlenecks?
+
+How can you optimize the rendering of UI elements in an Android app?
+
+Can you explain the difference between synchronous and asynchronous network requests, and when would you use each one?
+
+
+How can you implement background tasks in an Android app, and what are the best practices for doing so?
+
+Can you explain the difference between a bitmap and a drawable, and when would you use each one?
+
+
+How can you use the RecyclerView to improve the performance of a list in an Android app?
+
+
+ 
 
 ## Android Unit Testing
 
