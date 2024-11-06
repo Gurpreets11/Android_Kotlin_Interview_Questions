@@ -1438,9 +1438,11 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 
 ## Jetpack Compose
 
+* **What is Android Jetpack?**
 
-Coming soon
+* **What are the core components of Android Jetpack?**
 
+* **How does ViewModel work in Android Jetpack?**
 
 
 ## 💡 Useful Resources
