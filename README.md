@@ -1125,7 +1125,40 @@ This section covers Android-specific topics, including lifecycle management, arc
 
 ## Kotlin Coroutines
 
-Coming soon..
+
+What are coroutines in Kotlin, and how do they differ from threads?
+
+ Explain the benefits of using coroutines in Android development.
+
+How do you create a coroutine in Kotlin? What are the different ways to launch a coroutine?
+
+What is the difference between launch, async, and runBlocking in coroutines?
+
+Explain the concept of coroutine scope. How do you manage coroutine scope in Android applications?
+
+What are suspending functions in coroutines? How do they differ from regular functions?
+
+How do you handle exceptions in coroutines?
+
+ Explain the concept of coroutine context and dispatchers. What are the commonly used dispatchers in Android development?
+ 
+  How do you perform background tasks using coroutines in Android?
+ 
+ How do you cancel coroutines in Kotlin? What are the best practices for coroutine cancellation in Android apps?
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+<!--
+
+https://blog.stackademic.com/important-coroutine-interview-questions-for-experienced-android-developers-a4f1d5ad19c3
+
+
+-->
 
 
 ## Networking and Data Persistence
