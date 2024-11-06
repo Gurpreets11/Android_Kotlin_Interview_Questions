@@ -1232,6 +1232,36 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 * **What is a test fixture in Android testing and how is it used?**
 
 
+## Security
+
+What is Android Security Architecture? Explain in detail.
+
+What is encryption, and how can you encrypt data in an Android application?
+
+What is certificate pinning, and why is it important for app security?
+
+What is a Content Provider, and how does it help in securing Android applications?
+
+What is the Android Keystore system, and how does it work?
+
+What are some common security threats in Android app development, and how can they be prevented?
+
+What is SSL/TLS, and how is it used in Android app development?
+
+What is certificate pinning, and how does it improve the security of Android apps?
+
+What are some common authentication and authorization mechanisms used in Android app development?
+
+What is the Android Keystore system, and how is it used to store cryptographic keys?
+
+How can you prevent SQL injection attacks in Android app development?
+
+What is two-factor authentication, and how can it be implemented in Android apps?
+
+What is OAuth 2.0, and how is it used for authentication and authorization in Android apps?
+
+How can you protect sensitive data in Android apps?
+
 	
 
 ## 💡 Useful Resources
