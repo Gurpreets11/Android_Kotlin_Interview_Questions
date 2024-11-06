@@ -1264,6 +1264,38 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 
 	
 
+Version Control
+
+What is version control, and why is it important in software development?
+
+How do you use Git to create a new repository?
+
+What is a commit, and how do you create a new one in Git?
+
+What is a branch in Git, and why might you use one?
+
+How do you switch between Git branches?
+
+What is a merge conflict, and how do you resolve one in Git?
+
+What is a pull request in Git, and how does it work?
+
+How do you use Git to revert a commit?
+
+What is a Git tag, and how might you use one?
+
+What are some best practices for using version control systems like Git?
+
+
+
+
+
+
+
+
+
+
+
 ## 💡 Useful Resources
 
 Here are some recommended resources to deepen your understanding and get hands-on experience:
