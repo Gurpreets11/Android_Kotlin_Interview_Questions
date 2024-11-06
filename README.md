@@ -1201,38 +1201,35 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 * **How can you use the RecyclerView to improve the performance of a list in an Android app?**
 
 
- 
-
 ## Android Testing
 
+* **What is unit testing in Android? How does it help in improving the quality of Android apps?**
 
-What is unit testing in Android? How does it help in improving the quality of Android apps?
+* **What is UI testing in Android? How does it differ from unit testing?**
 
-What is UI testing in Android? How does it differ from unit testing?
+* **What is integration testing in Android? How does it differ from unit testing?**
 
-What is integration testing in Android? How does it differ from unit testing?
+* **What is a test double in Android testing? Give an example.**
 
-What is a test double in Android testing? Give an example.
+* **What is a code coverage tool in Android testing? How does it help in improving the quality of Android apps?**
 
-What is a code coverage tool in Android testing? How does it help in improving the quality of Android apps?
+* **What is the role of JUnit in Android testing?**
 
-What is the role of JUnit in Android testing?
+* **What is the role of Mockito in Android testing?**
 
-What is the role of Mockito in Android testing?
+* **What is the role of Espresso in Android testing?**
 
-What is the role of Espresso in Android testing?
+* **What is unit testing in Android and what are its benefits?**
 
-What is unit testing in Android and what are its benefits?
+* **What is the difference between unit testing and integration testing in Android?**
 
-What is the difference between unit testing and integration testing in Android?
+* **What is UI testing in Android and why is it important?**
 
-What is UI testing in Android and why is it important?
+* **What is mock testing in Android and why is it useful?**
 
-What is mock testing in Android and why is it useful?
+* **What is code coverage in Android testing and why is it important?**
 
-What is code coverage in Android testing and why is it important?
-
-What is a test fixture in Android testing and how is it used?
+* **What is a test fixture in Android testing and how is it used?**
 
 
 	
