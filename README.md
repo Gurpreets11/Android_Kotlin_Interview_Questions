@@ -71,6 +71,7 @@ This section covers Android-specific topics, including lifecycle management, arc
   - [Third-party Libraries and APIs](#third-party-libraries-and-apis)
   - [Problem-Solving Skills](#problem-solving-skills)
   - [Some High Level Questions](#some-high-level-questions)
+  - [Jetpack Compose](#jetpack-compose)
 
 
 
@@ -1432,6 +1433,15 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 Reference
 https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-edition-2024-part-iii-eb1fe01c2f9e
 -->
+
+
+
+## Jetpack Compose
+
+
+Coming soon
+
+
 
 ## 💡 Useful Resources
 
