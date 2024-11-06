@@ -60,7 +60,19 @@ This section covers Android-specific topics, including lifecycle management, arc
   - [Basic Kotlin Questions](#basic-kotlin-questions)
   - [Kotlin Coroutines](#kotlin-coroutines)
   - [Core Java](#core-java-questions)
+  - [Networking and Data Persistence](#networking-and-data-persistence)
+  - [Multithreading and Concurrency](#multithreading-and-concurrency)
+  - [Performance Optimization](#performance-optimization)
   - [Android Testing](#android-testing)
+  - [Security](#security)
+  - [Version Control](#version-control)
+  - [Play Store and App Deployment](#play-store-and-app-deployment)
+  - [Accessibility](#accessibility)
+  - [Third-party Libraries and APIs](#third-party-libraries-and-apis)
+  - [Problem-Solving Skills](#problem-solving-skills)
+  - [Some High Level Questions](#some-high-level-questions)
+
+
 
 
 ## Android Questions
@@ -1116,7 +1128,7 @@ This section covers Android-specific topics, including lifecycle management, arc
 Coming soon..
 
 
-## Advance Question
+## Networking and Data Persistence
 
 * **What is Retrofit and how does it work?**
 
@@ -1328,7 +1340,6 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 
 * **What are some resources that developers can use to learn more about accessibility in Android app development?**
 
-
 ## Third-party Libraries and APIs
 
 * **What is a third-party library in Android development? Give an example of a popular third-party library used in Android development.**
@@ -1370,7 +1381,7 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 
 
 
-## Some High Level Questions based on JD
+## Some High Level Questions
 
 * **What is your experience with Android SDK and NDK?**
 
