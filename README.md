@@ -57,7 +57,6 @@ This section covers Android-specific topics, including lifecycle management, arc
 ## 📝 Contents
 
   - [Android Questions](#android-questions)
-  
   - [Android App Architecture](#android-app-architecture)
   - [Core Java](#core-java-questions)
   - [Basic Kotlin Questions](#basic-kotlin-questions)
