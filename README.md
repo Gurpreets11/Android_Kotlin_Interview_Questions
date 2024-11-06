@@ -57,9 +57,11 @@ This section covers Android-specific topics, including lifecycle management, arc
 ## 📝 Contents
 
   - [Android Questions](#android-questions)
+  
+  - [Android App Architecture](#android-app-architecture)
+  - [Core Java](#core-java-questions)
   - [Basic Kotlin Questions](#basic-kotlin-questions)
   - [Kotlin Coroutines](#kotlin-coroutines)
-  - [Core Java](#core-java-questions)
   - [Networking and Data Persistence](#networking-and-data-persistence)
   - [Multithreading and Concurrency](#multithreading-and-concurrency)
   - [Performance Optimization](#performance-optimization)
@@ -401,6 +403,426 @@ This section covers Android-specific topics, including lifecycle management, arc
 	**Answer:** The Dependency Inversion Principle states that high-level modules should not depend on low-level modules. Instead, both should depend on abstractions. In Android app development, this means that the code should be written in a way that the business logic does not depend on the implementation details of the framework or infrastructure.
 
 
+## Core Java Questions
+
+* **What is the difference between JDK, JRE, and JVM?**
+
+	**Answer:**
+    
+	**JDK (Java Development Kit):**
+        It is a development environment for building applications, applets, and components using Java. It includes the JRE, compiler (javac), and other tools (like javadoc and java debugger).
+        It is required for developing Java applications.
+
+    **JRE (Java Runtime Environment):**
+        It provides the libraries, JVM, and other components to run applications written in Java.
+        It does not contain any development tools like compilers and debuggers.
+        If you only want to run a Java program, JRE is sufficient.
+
+    **JVM (Java Virtual Machine):**
+        It is a part of JRE responsible for executing Java bytecode.
+        JVM provides a platform-independent way of executing Java code, which is why Java is known as "Write Once, Run Anywhere."
+        It performs several tasks like memory management (using Garbage Collection) and security checks.
+
+* **Explain the concept of OOPs and its principles (Inheritance, Encapsulation, Polymorphism, Abstraction).**
+
+    **Answer:**
+	
+	**Object-Oriented Programming (OOP):**
+        It is a programming paradigm based on the concept of "objects," which can contain data (fields or attributes) and methods (functions).
+        It aims to implement real-world entities like inheritance, polymorphism, and encapsulation into programming.
+
+    **Principles of OOP:**
+	
+    **Inheritance:** It allows one class to inherit the properties and methods of another class. The existing class is called the parent class or superclass, and the derived class is called the child class or subclass.
+        
+	**Encapsulation:** It is the mechanism of wrapping the data (fields) and the methods that operate on the data into a single unit, called a class. It also restricts access to the internal state of an object using access modifiers.
+        
+	**Polymorphism:** It means "many forms." In Java, it allows one interface to be used for a general class of actions. The two types are compile-time polymorphism (method overloading) and runtime polymorphism (method overriding).
+    
+	**Abstraction:** It hides the implementation details from the user and only shows the functionality. Abstract classes and interfaces are used to achieve abstraction in Java.
+
+* **What are the various access specifiers in Java? Explain their scope.**
+
+	**Answer:**
+	
+	Java provides four access specifiers that determine the scope of a class, variable, method, or constructor:
+	
+	**public:**
+    Visible everywhere in the project.
+    It can be accessed from any class, regardless of the package.
+    
+	**protected:**
+    Visible within the same package and subclasses in different packages.
+    Often used when inheritance is involved.
+    
+	**default (no modifier):**
+    Visible only within the same package.
+    If no access specifier is specified, it is considered default.
+    
+	**private:**
+    Visible only within the same class.
+    It cannot be accessed from any other class.
+
+* **What is the difference between == and equals() in Java?**
+
+	**Answer:**
+    
+	**== Operator:**
+	
+    It is a reference comparison operator.
+    It checks whether two references point to the same memory location.
+    For primitive types, it compares the actual values.
+    
+	Example:
+		
+		String str1 = "Hello";
+		String str2 = "Hello";
+		System.out.println(str1 == str2); // true (because they refer to the same memory location)
+
+	**equals() Method:**
+
+	It is used for content comparison between objects.
+	In the String class, it is overridden to compare the actual contents.
+	
+	Example:
+		
+		String str1 = new String("Hello");
+		String str2 = new String("Hello");
+		System.out.println(str1.equals(str2)); // true (because it compares the content)
+		System.out.println(str1 == str2); // false (because they are different objects)
+
+
+* **What is a constructor in Java? Explain the types of constructors.**
+
+	**Answer:**
+    
+    A constructor is a special method that is called when an object is instantiated.
+    It initializes the object and sets up its initial state.
+    Constructors do not have a return type, not even void.
+    They must have the same name as the class.
+    
+	**Types of Constructors:**
+    
+	**Default Constructor:** A no-argument constructor provided by the compiler if no constructor is defined.
+    It initializes the object with default values.
+    Example:
+			
+		class MyClass {
+			MyClass() {
+				System.out.println("Default constructor called");
+			}
+		}
+
+	**Parameterized Constructor:** A constructor that takes one or more parameters to initialize the object with specific values.
+    Example:
+
+		class MyClass {
+			int x;
+			MyClass(int value) {
+				this.x = value;
+			}
+		}
+
+
+
+* **What is the difference between method overloading and method overriding?**
+
+	**Answer:**
+
+	**Method Overloading:**
+	It occurs when two or more methods in the same class have the same name but different parameters (type, number, or order).
+	It is a compile-time polymorphism.
+	
+	Example:
+	
+		class MyClass {
+			void display(int a) {}
+			void display(String b) {}
+		}
+
+
+	**Method Overriding:**
+	It occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass.
+	It is a runtime polymorphism.
+	
+	Example:
+	
+		class Parent {
+			void show() {}
+		}
+
+		class Child extends Parent {
+			@Override
+			void show() {}
+		}
+
+
+* **What is an interface, and how is it different from an abstract class?**
+	**Answer:**
+
+	**Interface:**
+
+	It is a reference type in Java, similar to a class, that can contain only abstract methods (until Java 7) and default or static methods (from Java 8).
+	All fields in an interface are public, static, and final by default.
+	A class implements an interface and provides implementations for its methods.
+    
+	**Differences from Abstract Class:**
+
+	- Abstract Class: Can have both abstract and concrete methods, instance variables, and constructors.
+	- Interface: Cannot have instance variables or constructors. Only contains abstract methods (before Java 8).
+	- Multiple Inheritance: A class can implement multiple interfaces but can extend only one abstract class.
+
+* **What is the use of the final keyword in Java?**
+  **Answer:**
+
+  The final keyword is used in different contexts:
+
+  **final variable:**
+
+  - Its value cannot be changed once assigned.
+  - It becomes a constant.
+  - Example: 
+	    
+		final int MAX_VALUE = 100;
+    
+  **final method:**
+  - Cannot be overridden by subclasses.
+  - Example:
+		
+		class Parent {
+		final void show() {}
+		}
+
+  **final class:**
+
+  - Cannot be subclassed.
+  - Example:
+	
+		final class MyClass {}
+
+
+  **final parameter:**
+  - The parameter value cannot be changed inside the method.
+  - Example: 
+
+		void method(final int x) {}
+		
+
+* **Explain the difference between ArrayList and LinkedList in Java.**
+
+  **Answer:**
+
+  **ArrayList:**
+
+  - Uses a dynamic array to store elements.
+  - Provides faster access time (O(1)) for accessing elements by index.
+  - Insertion and deletion are slower (O(n)) because elements need to be shifted.
+  - Better for random access and smaller data sets.
+
+  **LinkedList:**
+
+  - Uses a doubly linked list to store elements.
+  - Access time is slower (O(n)) as it requires traversal.
+  - Insertion and deletion are faster (O(1)) as it involves adjusting pointers.
+  - Better for frequent insertions and deletions.
+		
+
+* **What is a HashMap? How does it work internally?**
+
+	**Answer:**
+
+	**HashMap:**
+	- It is a part of the Java Collections Framework and implements the Map interface.
+	- It stores key-value pairs, where each key is unique.
+	- Allows one null key and multiple null values.
+	- Provides O(1) time complexity for get() and put() operations in the average case.
+
+	**How HashMap Works Internally:**
+	- It uses a hashing mechanism where a hash code is generated for each key.
+	- The hash code determines the bucket where the key-value pair is stored.
+	- If two keys have the same hash code, a collision occurs, and HashMap uses a linked list or binary tree (if the list length exceeds 8) to store multiple values in the same bucket.
+	- The HashMap uses load factor (default is 0.75) to decide when to resize the internal array to maintain performance.
+
+* **What are static methods and variables? Can we override a static method?**
+
+	**Answer:**
+
+	**static Variables:**
+	
+	- A static variable belongs to the class rather than an instance.
+    - It is shared among all instances of the class.
+    - Only one copy exists regardless of the number of objects created.
+    - Example:
+		
+		  class Counter {
+			static int count = 0;
+			Counter() { count++; }
+		  }
+
+
+	**static Methods:**
+	
+	- A static method belongs to the class rather than any object of the class.
+	- It can be called without creating an instance of the class.
+	- Cannot access instance variables directly; only static variables or other static methods can be accessed.
+	- Example:
+	
+		  class Utility {
+			static void printMessage() {
+				System.out.println("Hello, World!");
+			}
+		  }
+
+
+
+	**Can We Override a static Method?**
+
+	- No, static methods cannot be overridden because method overriding depends on dynamic (runtime) binding, whereas static methods are resolved at compile-time (static binding).
+	- However, method hiding can occur if a subclass defines a static method with the same signature as in the parent class. The version of the method called depends on the class type used to make the call, not on the object type.
+	
+	
+* **What is garbage collection in Java, and how does it work?**
+
+	**Answer:**
+
+    **Garbage Collection:**
+    - It is the process of automatically freeing memory by deleting objects that are no longer reachable or needed by the program.
+    - Java’s garbage collector manages the memory allocated to objects on the heap.
+
+    **How it Works:**
+	- The garbage collector identifies objects that are no longer in use (i.e., objects without any references) and deallocates the memory.
+    - The process runs in the background, typically using algorithms like Mark-and-Sweep and Generational Garbage Collection.
+    - Mark-and-Sweep: Identifies reachable objects (mark phase) and removes unmarked ones (sweep phase).
+    - Generational Garbage Collection: Divides the heap into Young Generation and Old Generation, optimizing for short-lived objects.
+
+* **What is the difference between throw and throws in exception handling?**
+
+	**Answer:**
+
+    **throw:**
+    - Used to explicitly throw an exception within a method or block.
+    - Can throw both checked and unchecked exceptions.
+        
+	- Example:
+		
+		  throw new IllegalArgumentException("Invalid argument");
+
+
+	**throws:**
+
+    - Used in a method signature to declare that a method can throw one or more exceptions.
+    - Indicates that the calling method should handle the exception.
+    - Typically used for checked exceptions.
+    
+	- Example:
+	
+		  void readFile() throws IOException {
+		  // Code that may throw an IOException
+		  }
+
+
+
+
+* **Explain the use of synchronized keyword. How does synchronization work in Java?**
+
+	**Answer:**
+
+    **synchronized Keyword:**
+    - Used to control access to a shared resource by multiple threads, ensuring that only one thread can access the resource at a time.
+    - Helps prevent thread interference and memory consistency errors.
+
+    **How Synchronization Works:**
+    - **Method Synchronization:** Use synchronized in method signature to lock the method for a single thread.
+		
+		  synchronized void increment() { ... }
+		
+	- **Block Synchronization:** Synchronizes a specific block of code inside a method.
+
+		  void increment() {
+			synchronized (this) {
+			// Code to synchronize
+			}	
+		  }
+
+
+	- Uses a monitor lock (or intrinsic lock) associated with the object. When a thread acquires the lock, other threads cannot access synchronized code blocks of that object until the lock is released.
+
+
+
+* **What is String, StringBuilder, and StringBuffer?**
+
+	**Answer:**
+
+	**`String`**:
+   - A `String` in Java represents an immutable sequence of characters.
+   - **Immutable** means that once a `String` object is created, its value cannot be changed.
+   - Any modification, like concatenation or replacement, results in the creation of a new `String` object.
+   - Stored in the **String pool**, which allows for memory optimization by reusing `String` literals.
+   - Example:
+     ```java
+     String s = "Hello";
+     s += " World"; // Creates a new String object, original "Hello" remains unchanged.
+     ```
+
+	**`StringBuilder`**:
+   - A `StringBuilder` represents a mutable sequence of characters.
+   - **Mutable** means that the object can be modified after it is created without creating a new object.
+   - Suitable for **single-threaded environments** because its methods are not synchronized.
+   - Faster than `String` and `StringBuffer` when modifications are frequent.
+   - Example:
+     ```java
+     StringBuilder sb = new StringBuilder("Hello");
+     sb.append(" World"); // Modifies the original StringBuilder object.
+     ```
+
+	**`StringBuffer`**:
+   - Like `StringBuilder`, `StringBuffer` represents a mutable sequence of characters.
+   - **Thread-safe** because its methods are synchronized, which means it is safe to use in **multi-threaded environments**.
+   - Slower than `StringBuilder` due to the overhead of synchronization.
+   - Example:
+     ```java
+     StringBuffer sb = new StringBuffer("Hello");
+     sb.append(" World"); // Modifies the original StringBuffer object.
+     ```
+
+
+### Differences between `String`, `StringBuilder`, and `StringBuffer`
+
+| **Feature**       | **String**                         | **StringBuilder**                      | **StringBuffer**                       |
+|-------------------|------------------------------------|----------------------------------------|----------------------------------------|
+| **Mutability**    | Immutable                          | Mutable                                | Mutable                                |
+| **Thread-Safety** | Not thread-safe                    | Not thread-safe                        | Thread-safe                            |
+| **Performance**   | Slower for frequent modifications  | Faster than `String` and `StringBuffer` | Slower than `StringBuilder` due to synchronization |
+| **Use Case**      | When immutability is desired       | When fast performance in single-threaded context is needed | When thread safety is required in a multi-threaded context |
+| **Memory Usage**  | Higher, due to creation of new objects | More efficient for modifications      | Similar to `StringBuilder`, but with overhead due to synchronization |
+| **Example**       | `String s = "Hello";`              | `StringBuilder sb = new StringBuilder("Hello");` | `StringBuffer sb = new StringBuffer("Hello");` |
+
+
+
+  **Note:**
+   1. Use String when you want immutable data and are working with string literals.
+   2. Use StringBuilder for mutable strings when working in a single-threaded environment where performance matters.
+   3. Use StringBuffer when you need a thread-safe solution for mutable strings in multi-threaded applications.
+
+
+* **How to make object thread-safe without synchronisation?**
+   - **Immutable Objects**: If an object doesn’t have any mutable state, it’s inherently thread-safe. Once created, its state cannot change, so there’s no need for synchronization.
+   - **Thread-Local Storage**: Use ThreadLocal variables when you need to maintain state that is unique to a thread. This way, each thread has its own instance of a variable, and no synchronization is needed.
+   - **Concurrent Collections**: Utilize the concurrent collections from the java.util.concurrent package, such as ConcurrentHashMap, which are designed to handle concurrent access without explicit synchronization.
+   - **Atomic Variables**: Use atomic variables from the java.util.concurrent.atomic package, like AtomicInteger or AtomicReference, which provide methods that are thread-safe without synchronization.
+   - **Volatile Fields**: Declare fields as volatile to ensure that every thread sees the most recent write to the field. However, note that volatile only guarantees visibility, not atomicity.
+   - **Coroutines** (Kotlin Specific): In Kotlin, you can use coroutines with shared mutable state carefully, employing mechanisms like Mutex for mutual exclusion without traditional locking.
+   - **UI Thread** (Android Specific): For Android, use methods like Activity.runOnUiThread(Runnable) or View.post(Runnable) to perform actions on the UI thread safely.
+
+
+* **Explain in detail Java 8 Features?**
+
+	**Answer:**
+	
+	Java 8 introduced several major features that significantly enhanced the language, focusing on functional programming, improved concurrency, and ease of development. Learn java 8 features in details [from here](https://buffmycode.com/index.php/2023/05/31/java-8-features/)
+
+
+
 
 ## Basic Kotlin Questions
 
@@ -699,429 +1121,6 @@ This section covers Android-specific topics, including lifecycle management, arc
 * **What is the difference between a lateinit property and an initialized property in Kotlin?**
 
 	**Answer:** <br/>A lateinit property is a property that is declared without an initial value, but is guaranteed to be initialized before it is used. This is useful for properties that cannot be initialized in the constructor, but need to be initialized before they are used. An initialized property, on the other hand, is a property that is declared with an initial value and can be used immediately.
-
-
-
-## Core Java Questions
-
-* **What is the difference between JDK, JRE, and JVM?**
-
-	**Answer:**
-    
-	**JDK (Java Development Kit):**
-        It is a development environment for building applications, applets, and components using Java. It includes the JRE, compiler (javac), and other tools (like javadoc and java debugger).
-        It is required for developing Java applications.
-
-    **JRE (Java Runtime Environment):**
-        It provides the libraries, JVM, and other components to run applications written in Java.
-        It does not contain any development tools like compilers and debuggers.
-        If you only want to run a Java program, JRE is sufficient.
-
-    **JVM (Java Virtual Machine):**
-        It is a part of JRE responsible for executing Java bytecode.
-        JVM provides a platform-independent way of executing Java code, which is why Java is known as "Write Once, Run Anywhere."
-        It performs several tasks like memory management (using Garbage Collection) and security checks.
-
-* **Explain the concept of OOPs and its principles (Inheritance, Encapsulation, Polymorphism, Abstraction).**
-
-    **Answer:**
-	
-	**Object-Oriented Programming (OOP):**
-        It is a programming paradigm based on the concept of "objects," which can contain data (fields or attributes) and methods (functions).
-        It aims to implement real-world entities like inheritance, polymorphism, and encapsulation into programming.
-
-    **Principles of OOP:**
-	
-    **Inheritance:** It allows one class to inherit the properties and methods of another class. The existing class is called the parent class or superclass, and the derived class is called the child class or subclass.
-        
-	**Encapsulation:** It is the mechanism of wrapping the data (fields) and the methods that operate on the data into a single unit, called a class. It also restricts access to the internal state of an object using access modifiers.
-        
-	**Polymorphism:** It means "many forms." In Java, it allows one interface to be used for a general class of actions. The two types are compile-time polymorphism (method overloading) and runtime polymorphism (method overriding).
-    
-	**Abstraction:** It hides the implementation details from the user and only shows the functionality. Abstract classes and interfaces are used to achieve abstraction in Java.
-
-* **What are the various access specifiers in Java? Explain their scope.**
-
-	**Answer:**
-	
-	Java provides four access specifiers that determine the scope of a class, variable, method, or constructor:
-	
-	**public:**
-    Visible everywhere in the project.
-    It can be accessed from any class, regardless of the package.
-    
-	**protected:**
-    Visible within the same package and subclasses in different packages.
-    Often used when inheritance is involved.
-    
-	**default (no modifier):**
-    Visible only within the same package.
-    If no access specifier is specified, it is considered default.
-    
-	**private:**
-    Visible only within the same class.
-    It cannot be accessed from any other class.
-
-* **What is the difference between == and equals() in Java?**
-
-	**Answer:**
-    
-	**== Operator:**
-	
-    It is a reference comparison operator.
-    It checks whether two references point to the same memory location.
-    For primitive types, it compares the actual values.
-    
-	Example:
-		
-		String str1 = "Hello";
-		String str2 = "Hello";
-		System.out.println(str1 == str2); // true (because they refer to the same memory location)
-
-	**equals() Method:**
-
-	It is used for content comparison between objects.
-	In the String class, it is overridden to compare the actual contents.
-	
-	Example:
-		
-		String str1 = new String("Hello");
-		String str2 = new String("Hello");
-		System.out.println(str1.equals(str2)); // true (because it compares the content)
-		System.out.println(str1 == str2); // false (because they are different objects)
-
-
-* **What is a constructor in Java? Explain the types of constructors.**
-
-	**Answer:**
-    
-    A constructor is a special method that is called when an object is instantiated.
-    It initializes the object and sets up its initial state.
-    Constructors do not have a return type, not even void.
-    They must have the same name as the class.
-    
-	**Types of Constructors:**
-    
-	**Default Constructor:** A no-argument constructor provided by the compiler if no constructor is defined.
-    It initializes the object with default values.
-    Example:
-			
-		class MyClass {
-			MyClass() {
-				System.out.println("Default constructor called");
-			}
-		}
-
-	**Parameterized Constructor:** A constructor that takes one or more parameters to initialize the object with specific values.
-    Example:
-
-		class MyClass {
-			int x;
-			MyClass(int value) {
-				this.x = value;
-			}
-		}
-
-
-
-* **What is the difference between method overloading and method overriding?**
-
-	**Answer:**
-
-	**Method Overloading:**
-	It occurs when two or more methods in the same class have the same name but different parameters (type, number, or order).
-	It is a compile-time polymorphism.
-	
-	Example:
-	
-		class MyClass {
-			void display(int a) {}
-			void display(String b) {}
-		}
-
-
-	**Method Overriding:**
-	It occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass.
-	It is a runtime polymorphism.
-	
-	Example:
-	
-		class Parent {
-			void show() {}
-		}
-
-		class Child extends Parent {
-			@Override
-			void show() {}
-		}
-
-
-* **What is an interface, and how is it different from an abstract class?**
-	**Answer:**
-
-	**Interface:**
-
-	It is a reference type in Java, similar to a class, that can contain only abstract methods (until Java 7) and default or static methods (from Java 8).
-	All fields in an interface are public, static, and final by default.
-	A class implements an interface and provides implementations for its methods.
-    
-	**Differences from Abstract Class:**
-
-	- Abstract Class: Can have both abstract and concrete methods, instance variables, and constructors.
-	- Interface: Cannot have instance variables or constructors. Only contains abstract methods (before Java 8).
-	- Multiple Inheritance: A class can implement multiple interfaces but can extend only one abstract class.
-
-* **What is the use of the final keyword in Java?**
-  **Answer:**
-
-  The final keyword is used in different contexts:
-
-  **final variable:**
-
-  - Its value cannot be changed once assigned.
-  - It becomes a constant.
-  - Example: 
-	    
-		final int MAX_VALUE = 100;
-    
-  **final method:**
-  - Cannot be overridden by subclasses.
-  - Example:
-		
-		class Parent {
-		final void show() {}
-		}
-
-  **final class:**
-
-  - Cannot be subclassed.
-  - Example:
-	
-		final class MyClass {}
-
-
-  **final parameter:**
-  - The parameter value cannot be changed inside the method.
-  - Example: 
-
-		void method(final int x) {}
-		
-
-* **Explain the difference between ArrayList and LinkedList in Java.**
-
-  **Answer:**
-
-  **ArrayList:**
-
-  - Uses a dynamic array to store elements.
-  - Provides faster access time (O(1)) for accessing elements by index.
-  - Insertion and deletion are slower (O(n)) because elements need to be shifted.
-  - Better for random access and smaller data sets.
-
-  **LinkedList:**
-
-  - Uses a doubly linked list to store elements.
-  - Access time is slower (O(n)) as it requires traversal.
-  - Insertion and deletion are faster (O(1)) as it involves adjusting pointers.
-  - Better for frequent insertions and deletions.
-		
-
-
-
-* **What is a HashMap? How does it work internally?**
-
-	**Answer:**
-
-	**HashMap:**
-	- It is a part of the Java Collections Framework and implements the Map interface.
-	- It stores key-value pairs, where each key is unique.
-	- Allows one null key and multiple null values.
-	- Provides O(1) time complexity for get() and put() operations in the average case.
-
-	**How HashMap Works Internally:**
-	- It uses a hashing mechanism where a hash code is generated for each key.
-	- The hash code determines the bucket where the key-value pair is stored.
-	- If two keys have the same hash code, a collision occurs, and HashMap uses a linked list or binary tree (if the list length exceeds 8) to store multiple values in the same bucket.
-	- The HashMap uses load factor (default is 0.75) to decide when to resize the internal array to maintain performance.
-
-* **What are static methods and variables? Can we override a static method?**
-
-	**Answer:**
-
-	**static Variables:**
-	
-	- A static variable belongs to the class rather than an instance.
-    - It is shared among all instances of the class.
-    - Only one copy exists regardless of the number of objects created.
-    - Example:
-		
-		  class Counter {
-			static int count = 0;
-			Counter() { count++; }
-		  }
-
-
-	**static Methods:**
-	
-	- A static method belongs to the class rather than any object of the class.
-	- It can be called without creating an instance of the class.
-	- Cannot access instance variables directly; only static variables or other static methods can be accessed.
-	- Example:
-	
-		  class Utility {
-			static void printMessage() {
-				System.out.println("Hello, World!");
-			}
-		  }
-
-
-
-	**Can We Override a static Method?**
-
-	- No, static methods cannot be overridden because method overriding depends on dynamic (runtime) binding, whereas static methods are resolved at compile-time (static binding).
-	- However, method hiding can occur if a subclass defines a static method with the same signature as in the parent class. The version of the method called depends on the class type used to make the call, not on the object type.
-	
-	
-* **What is garbage collection in Java, and how does it work?**
-
-	**Answer:**
-
-    **Garbage Collection:**
-    - It is the process of automatically freeing memory by deleting objects that are no longer reachable or needed by the program.
-    - Java’s garbage collector manages the memory allocated to objects on the heap.
-
-    **How it Works:**
-	- The garbage collector identifies objects that are no longer in use (i.e., objects without any references) and deallocates the memory.
-    - The process runs in the background, typically using algorithms like Mark-and-Sweep and Generational Garbage Collection.
-    - Mark-and-Sweep: Identifies reachable objects (mark phase) and removes unmarked ones (sweep phase).
-    - Generational Garbage Collection: Divides the heap into Young Generation and Old Generation, optimizing for short-lived objects.
-
-* **What is the difference between throw and throws in exception handling?**
-
-	**Answer:**
-
-    **throw:**
-    - Used to explicitly throw an exception within a method or block.
-    - Can throw both checked and unchecked exceptions.
-        
-	- Example:
-		
-		  throw new IllegalArgumentException("Invalid argument");
-
-
-	**throws:**
-
-    - Used in a method signature to declare that a method can throw one or more exceptions.
-    - Indicates that the calling method should handle the exception.
-    - Typically used for checked exceptions.
-    
-	- Example:
-	
-		  void readFile() throws IOException {
-		  // Code that may throw an IOException
-		  }
-
-
-
-
-* **Explain the use of synchronized keyword. How does synchronization work in Java?**
-
-	**Answer:**
-
-    **synchronized Keyword:**
-    - Used to control access to a shared resource by multiple threads, ensuring that only one thread can access the resource at a time.
-    - Helps prevent thread interference and memory consistency errors.
-
-    **How Synchronization Works:**
-    - **Method Synchronization:** Use synchronized in method signature to lock the method for a single thread.
-		
-		  synchronized void increment() { ... }
-		
-	- **Block Synchronization:** Synchronizes a specific block of code inside a method.
-
-		  void increment() {
-			synchronized (this) {
-			// Code to synchronize
-			}	
-		  }
-
-
-	- Uses a monitor lock (or intrinsic lock) associated with the object. When a thread acquires the lock, other threads cannot access synchronized code blocks of that object until the lock is released.
-
-
-
-* **What is String, StringBuilder, and StringBuffer?**
-
-	**Answer:**
-
-	**`String`**:
-   - A `String` in Java represents an immutable sequence of characters.
-   - **Immutable** means that once a `String` object is created, its value cannot be changed.
-   - Any modification, like concatenation or replacement, results in the creation of a new `String` object.
-   - Stored in the **String pool**, which allows for memory optimization by reusing `String` literals.
-   - Example:
-     ```java
-     String s = "Hello";
-     s += " World"; // Creates a new String object, original "Hello" remains unchanged.
-     ```
-
-	**`StringBuilder`**:
-   - A `StringBuilder` represents a mutable sequence of characters.
-   - **Mutable** means that the object can be modified after it is created without creating a new object.
-   - Suitable for **single-threaded environments** because its methods are not synchronized.
-   - Faster than `String` and `StringBuffer` when modifications are frequent.
-   - Example:
-     ```java
-     StringBuilder sb = new StringBuilder("Hello");
-     sb.append(" World"); // Modifies the original StringBuilder object.
-     ```
-
-	**`StringBuffer`**:
-   - Like `StringBuilder`, `StringBuffer` represents a mutable sequence of characters.
-   - **Thread-safe** because its methods are synchronized, which means it is safe to use in **multi-threaded environments**.
-   - Slower than `StringBuilder` due to the overhead of synchronization.
-   - Example:
-     ```java
-     StringBuffer sb = new StringBuffer("Hello");
-     sb.append(" World"); // Modifies the original StringBuffer object.
-     ```
-
-
-### Differences between `String`, `StringBuilder`, and `StringBuffer`
-
-| **Feature**       | **String**                         | **StringBuilder**                      | **StringBuffer**                       |
-|-------------------|------------------------------------|----------------------------------------|----------------------------------------|
-| **Mutability**    | Immutable                          | Mutable                                | Mutable                                |
-| **Thread-Safety** | Not thread-safe                    | Not thread-safe                        | Thread-safe                            |
-| **Performance**   | Slower for frequent modifications  | Faster than `String` and `StringBuffer` | Slower than `StringBuilder` due to synchronization |
-| **Use Case**      | When immutability is desired       | When fast performance in single-threaded context is needed | When thread safety is required in a multi-threaded context |
-| **Memory Usage**  | Higher, due to creation of new objects | More efficient for modifications      | Similar to `StringBuilder`, but with overhead due to synchronization |
-| **Example**       | `String s = "Hello";`              | `StringBuilder sb = new StringBuilder("Hello");` | `StringBuffer sb = new StringBuffer("Hello");` |
-
-
-
-  **Note:**
-   1. Use String when you want immutable data and are working with string literals.
-   2. Use StringBuilder for mutable strings when working in a single-threaded environment where performance matters.
-   3. Use StringBuffer when you need a thread-safe solution for mutable strings in multi-threaded applications.
-
-
-* **How to make object thread-safe without synchronisation?**
-   - **Immutable Objects**: If an object doesn’t have any mutable state, it’s inherently thread-safe. Once created, its state cannot change, so there’s no need for synchronization.
-   - **Thread-Local Storage**: Use ThreadLocal variables when you need to maintain state that is unique to a thread. This way, each thread has its own instance of a variable, and no synchronization is needed.
-   - **Concurrent Collections**: Utilize the concurrent collections from the java.util.concurrent package, such as ConcurrentHashMap, which are designed to handle concurrent access without explicit synchronization.
-   - **Atomic Variables**: Use atomic variables from the java.util.concurrent.atomic package, like AtomicInteger or AtomicReference, which provide methods that are thread-safe without synchronization.
-   - **Volatile Fields**: Declare fields as volatile to ensure that every thread sees the most recent write to the field. However, note that volatile only guarantees visibility, not atomicity.
-   - **Coroutines** (Kotlin Specific): In Kotlin, you can use coroutines with shared mutable state carefully, employing mechanisms like Mutex for mutual exclusion without traditional locking.
-   - **UI Thread** (Android Specific): For Android, use methods like Activity.runOnUiThread(Runnable) or View.post(Runnable) to perform actions on the UI thread safely.
-
-
-* **Explain in detail Java 8 Features?**
-
-	**Answer:**
-	
-	Java 8 introduced several major features that significantly enhanced the language, focusing on functional programming, improved concurrency, and ease of development. Learn java 8 features in details [from here](https://buffmycode.com/index.php/2023/05/31/java-8-features/)
-
 
 
 ## Kotlin Coroutines
