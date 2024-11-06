@@ -1311,7 +1311,7 @@ What are the best practices for optimizing app listing on the Google Play Store?
 
 
 
-Accessibility
+## Accessibility
 
 What are accessibility services in Android, and how can they be used to enhance the usability of an app?
 
@@ -1334,7 +1334,45 @@ What are some accessibility considerations for developing games and multimedia a
 What are some resources that developers can use to learn more about accessibility in Android app development?
 
 
+Third-party Libraries and APIs
 
+What is a third-party library in Android development? Give an example of a popular third-party library used in Android development.
+
+What is an API in Android development? Give an example of a popular API used in Android development.
+
+What is Google Play Services in Android development? How is it used?
+
+What is Firebase in Android development? How is it used?
+
+
+What is an open-source library in Android development? Give an example of a popular open-source library used in Android development.
+
+What is the process for adding a third-party library to an Android project? Describe the steps.
+
+
+Problem-Solving Skills
+
+What is your process for debugging an Android app that is crashing unexpectedly?
+
+How would you optimize the performance of an app that is running slowly?
+
+What are some common security threats that Android apps face, and how would you protect against them?
+
+How would you design an app that is accessible for people with disabilities?
+
+How would you approach adding a new feature to an existing app?
+
+What steps would you take to troubleshoot a crash in an Android app?
+
+What is your approach to debugging a network-related issue in an Android app?
+
+How would you go about optimizing the performance of an Android app?
+
+Can you explain how you would handle memory leaks in an Android app?
+
+How would you implement offline caching in an Android app?
+
+What is your approach to testing an Android app with different screen resolutions and densities?
 
 
 
