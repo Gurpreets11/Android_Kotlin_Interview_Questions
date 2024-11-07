@@ -213,7 +213,6 @@ This section covers Android-specific topics, including lifecycle management, arc
 	**Answer:** A Content Provider is a component that manages a shared set of app data that can be accessed by other apps or components. It provides a standardized interface to access and manipulate data.
 
 
-
 * **How do you pass data between Activities in Android?**
 
 	**Answer:** Data can be passed between Activities in Android by using Intent extras or by using the startActivityForResult method.
@@ -221,8 +220,6 @@ This section covers Android-specific topics, including lifecycle management, arc
 * **What is the purpose of a Bundle in Android?**
 
 	**Answer:** A Bundle is a container for data that can be passed between components in Android, such as Activities, Fragments, or Services. It is often used to save and restore instance state data.
-
-
 
 
 * **What is the difference between a View and a ViewGroup in Android UI development?**
@@ -1405,7 +1402,6 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 * **What is your approach to testing an Android app with different screen resolutions and densities?**
 
 
-
 ## Some High Level Questions
 
 * **What is your experience with Android SDK and NDK?**
@@ -1431,7 +1427,6 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 Reference
 https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-edition-2024-part-iii-eb1fe01c2f9e
 -->
-
 
 
 ## Jetpack Compose
