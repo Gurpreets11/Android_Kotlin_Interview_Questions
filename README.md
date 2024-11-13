@@ -1437,63 +1437,63 @@ https://medium.com/@vikasacsoni9211/quest-for-android-excellence-interview-editi
 
 * **How does ViewModel work in Android Jetpack?**
 
-Explain the difference between View-based UI framework and Jetpack Compose.
+* **Explain the difference between View-based UI framework and Jetpack Compose.**
 
-What are the advantages of using Jetpack Compose over the traditional View system?
+* **What are the advantages of using Jetpack Compose over the traditional View system?**
 
-What is a Composable function in Jetpack Compose?
+* **What is a Composable function in Jetpack Compose?**
 
-How does state management work in Jetpack Compose?
+* **How does state management work in Jetpack Compose?**
 
-What is the role of the Modifier in Jetpack Compose?
+* **What is the role of the Modifier in Jetpack Compose?**
 
-How is navigation handled in Jetpack Compose?
+* **How is navigation handled in Jetpack Compose?**
 
-Explain the concept of recomposition in Jetpack Compose.
+* **Explain the concept of recomposition in Jetpack Compose.**
 
-How can you handle user input and events in Jetpack Compose?
+* **How can you handle user input and events in Jetpack Compose?**
 
-What is the purpose of ViewModel in Jetpack Compose?
+* **What is the purpose of ViewModel in Jetpack Compose?**
 
-How does Jetpack Compose integrate with existing Android frameworks and libraries?
+* **How does Jetpack Compose integrate with existing Android frameworks and libraries?**
 
-What are the key components of the Jetpack Compose architecture?
+* **What are the key components of the Jetpack Compose architecture?**
 
-How do you perform animations in Jetpack Compose?
+* **How do you perform animations in Jetpack Compose?**
 
-What is the purpose of ConstraintLayout in Jetpack Compose?
+* **What is the purpose of ConstraintLayout in Jetpack Compose?**
 
-How do you handle theming and styling in Jetpack Compose?
+* **How do you handle theming and styling in Jetpack Compose?**
 
-Explain the concept of side effects in Jetpack Compose.
+* **Explain the concept of side effects in Jetpack Compose.**
 
-How can you handle asynchronous operations in Jetpack Compose?
+* **How can you handle asynchronous operations in Jetpack Compose?**
 
-What are Compose key events, and how are they used?
+* **What are Compose key events, and how are they used?**
 
-How do you test UI components in Jetpack Compose?
+* **How do you test UI components in Jetpack Compose?**
 
-What is the purpose of remember in Jetpack Compose, and how is it used?
+* **What is the purpose of remember in Jetpack Compose, and how is it used?**
 
-What is the role of StateFlow and SharedFlow in Jetpack Compose?
+* **What is the role of StateFlow and SharedFlow in Jetpack Compose?**
 
-How can you handle input validation in Jetpack Compose?
+* **How can you handle input validation in Jetpack Compose?**
 
-Explain the concept of lazy composition in Jetpack Compose.
+* **Explain the concept of lazy composition in Jetpack Compose.**
 
-What are recomposition triggers, and how can you use them?
+* **What are recomposition triggers, and how can you use them?**
 
-How can you handle keyboard input in Jetpack Compose?
+* **How can you handle keyboard input in Jetpack Compose?**
 
-What is the role of CompositionLocal in Jetpack Compose?
+* **What is the role of CompositionLocal in Jetpack Compose?**
 
-How do you handle orientation changes in Jetpack Compose?
+* **How do you handle orientation changes in Jetpack Compose?**
 
-Explain the concept of accessibility support in Jetpack Compose.
+* **Explain the concept of accessibility support in Jetpack Compose.**
 
-How can you integrate Jetpack Compose with data binding?
+* **How can you integrate Jetpack Compose with data binding?**
 
-What are the best practices for performance optimization in Jetpack Compose?
+* **What are the best practices for performance optimization in Jetpack Compose?**
 
 
 
